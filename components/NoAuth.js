@@ -1,12 +1,12 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import NoAuthNavBar from './NoAuthNavBar';
+import NavBar from './NavBar';
 
 function NoAuth({ component: Component, pageProps }) {
   return (
     <>
-      <NoAuthNavBar />
+      <NavBar />
       <div className="container">
         <Component {...pageProps} />
       </div>
