@@ -9,7 +9,7 @@ function NoAuth({ component: Component, pageProps }) {
       <div
         className="w-75 mx-auto p-3 mb-4 mt-4 rounded-lg"
         style={{
-          backgroundColor: '#413a49',
+          backgroundColor: '#c99aa1',
         }}
       >
         <NavBar />

@@ -3,7 +3,7 @@ $white: #e2cfcb;
 $pink: #c99aa1;
 $pop: #bf6152;
 $blue: #576d7d;
-$purple: #716777;
+$purple: #5e426e;
 $dark: #413a49;
 
 //text
@@ -11,4 +11,15 @@ $dark: #413a49;
   font-size: 150%;
   color: $txtcolor;
   font-weight: 200;
+}
+
+@mixin text-norm ($txtcolor) {
+  font-size: 90%;
+  color: $txtcolor;
+  font-weight: 400;
+}
+
+@mixin pill ($color) {
+  background-color: $color;
+
 }
