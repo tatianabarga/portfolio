@@ -12,7 +12,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1">
-          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/projects" className="text-sm font-semibold leading-6 text-gray-900">
             <a>Projects</a>
           </Link>
         </div>

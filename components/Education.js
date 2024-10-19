@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAllEducation } from '../utils/data/educationData';
+import getAllEducation from '../utils/data/educationData';
 
 export default function Education() {
   const [educations, setEducations] = useState({});

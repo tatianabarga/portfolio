@@ -14,19 +14,4 @@ const getAllEducation = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const rr = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/aboutme/email.json`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => resolve(data))
-    .catch(reject);
-});
-
-export {
-  getAllEducation,
-  rr,
-};
+export default getAllEducation;

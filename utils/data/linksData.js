@@ -26,7 +26,20 @@ const getGithub = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getResume = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/links/resume.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getLinkedin,
   getGithub,
+  getResume,
 };
