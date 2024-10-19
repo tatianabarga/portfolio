@@ -4,6 +4,10 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 @import './navbar';
 @import './variables';
+@import './view.scss';
+@import './components/education.scss';
+@import './components/skills.scss';
+@import './pages/resume.scss';
 
 html,
 body {

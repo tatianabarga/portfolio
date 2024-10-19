@@ -31,7 +31,7 @@ export default function NavBar() {
             <a>Resume</a>
           </Link>
         </div>
-        <div className="btn-div inline-block"> {/* Make this look like a button */}
+        <div className="btn-div"> {/* Make this look like a button */}
           <button type="button" className="contact">
             <a>Get in touch</a>
           </button>

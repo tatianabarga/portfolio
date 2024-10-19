@@ -20,19 +20,29 @@ export default function Skills() {
 
   return (
     <div>
-      <h2>Skills</h2>
-      <h2>Tech:</h2>
-      {techSkillsArr.map((skill) => (
-        <div>
-          <p>{skill}</p>
+      <h2 className="subheader">Skills</h2>
+      <div className="sk-cont">
+        <div className="sk-subcont">
+          <h2 className="subheader">Tech:</h2>
+          {techSkillsArr.map((skill) => (
+            <div className="skill">
+              <div className="skill-txt">
+                <p>{skill}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-      <h2>Soft Skills:</h2>
-      {softSkillsArr.map((skill) => (
-        <div>
-          <p>{skill}</p>
+        <div className="sk-subcont">
+          <h2 className="subheader">Soft Skills:</h2>
+          {softSkillsArr.map((skill) => (
+            <div className="skill">
+              <div className="skill-txt">
+                <p>{skill}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

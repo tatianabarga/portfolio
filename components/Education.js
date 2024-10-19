@@ -16,14 +16,22 @@ export default function Education() {
 
   return (
     <div>
-      <h2>Education</h2>
-      {edArray.map((education) => (
+      <div className="ed-cont">
         <div>
-          <p>{education.school}</p>
-          <p>{education.date}</p>
-          <p>{education.description}</p>
+          <h2 className="main-header">Education</h2>
+          {edArray.map((education) => (
+            <div>
+              <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                <div className="border-t border-gray-200 pt-4">
+                  <dt>{education.school}</dt>
+                  {/* <p className="date">{education.date}</p> */}
+                  <dd>{education.description}</dd>
+                </div>
+              </dl>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

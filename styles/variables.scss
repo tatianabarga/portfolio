@@ -3,20 +3,56 @@ $white: #e2cfcb;
 $pink: #c99aa1;
 $pop: #bf6152;
 $blue: #576d7d;
-$purple: #5e426e;
+$yellow: #fad954;
 $dark: #413a49;
 
 //text
+$norm: 'Helvetica', Arial, sans-serif;
+
+@mixin header-lg ($txtcolor) {
+  font-size: 170%;
+  color: $txtcolor;
+  font-weight: 500;
+  font-family: $norm;
+}
+
 @mixin secHeader ($txtcolor) {
   font-size: 150%;
   color: $txtcolor;
-  font-weight: 200;
+  font-weight: 500;
+}
+
+@mixin subHeader ($txtcolor) {
+  font-size: 100%;
+  color: $txtcolor;
+  font-weight: 500;
+  font-family: $norm;
 }
 
 @mixin text-norm ($txtcolor) {
   font-size: 90%;
   color: $txtcolor;
   font-weight: 400;
+}
+
+@mixin text-sm ($txtcolor) {
+  font-size: 70%;
+  color: $txtcolor;
+  font-weight: 400;
+  font-family: $norm;
+}
+
+//styles
+
+@mixin rounded () {
+  border-radius: 0.35rem;
+}
+
+@mixin padding ($sides, $tb) {
+  padding-top: $tb;
+  padding-bottom: $tb;
+  padding-left: $sides;
+  padding-right: $sides;
 }
 
 // buttons
@@ -26,5 +62,5 @@ $dark: #413a49;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 8%;
+  @include rounded;
 }
