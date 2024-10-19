@@ -6,9 +6,16 @@ import NavBar from './NavBar';
 function NoAuth({ component: Component, pageProps }) {
   return (
     <>
-      <NavBar />
-      <div className="container">
-        <Component {...pageProps} />
+      <div
+        className="w-75 mx-auto p-3 mb-4 mt-4 rounded-lg"
+        style={{
+          backgroundColor: '#413a49',
+        }}
+      >
+        <NavBar />
+        <div className="container">
+          <Component {...pageProps} />
+        </div>
       </div>
     </>
   );

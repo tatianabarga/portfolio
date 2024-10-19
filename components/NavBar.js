@@ -27,7 +27,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1">
-          <Link href="/home" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
             <a>Home</a>
           </Link>
         </div>

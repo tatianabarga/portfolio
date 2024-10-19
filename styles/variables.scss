@@ -1,1 +1,14 @@
+//colors
+$white: #e2cfcb;
+$pink: #c99aa1;
+$pop: #bf6152;
+$blue: #576d7d;
+$purple: #716777;
+$dark: #413a49;
+
 //text
+@mixin secHeader ($txtcolor) {
+  font-size: 150%;
+  color: $txtcolor;
+  font-weight: 200;
+}
