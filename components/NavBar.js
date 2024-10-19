@@ -1,21 +1,35 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import Link from 'next/link';
 
 export default function NavBar() {
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="hidden lg:flex lg:flex-1">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About Me</a>
+          <Link href="/aboutme" className="text-sm font-semibold leading-6 text-gray-900">
+            <a>About Me</a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Projects</a>
+          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a>Projects</a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contact Info</a>
+          <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+            <a>Contact Info</a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Resume</a>
+          <Link href="/resume" className="text-sm font-semibold leading-6 text-gray-900">
+            <a>Resume</a>
+          </Link>
+        </div>
+        <div className="hidden lg:flex lg:flex-1">
+          <Link href="/home" className="text-sm font-semibold leading-6 text-gray-900">
+            <a>Home</a>
+          </Link>
         </div>
       </nav>
       {/* <!-- Mobile menu, show/hide based on menu open state. --> */}

@@ -1,11 +1,9 @@
 import React from 'react';
 import ContactInfo from '../components/ContactInfo';
-import Aboutme from '../components/Aboutme';
 
-export default function aboutme() {
+export default function contact() {
   return (
     <div>
-      <Aboutme />
       <ContactInfo />
     </div>
   );
