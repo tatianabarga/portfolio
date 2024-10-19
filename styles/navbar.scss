@@ -12,10 +12,29 @@
   flex-direction: row;
   padding-left: 2rem;
   padding-right: 2rem;
+  
+  .logo {
+    margin-right: auto;
+    display: flex;
+    align-self: flex-start;
+    @include secHeader($white);
+  }
+
+  .btn-div {
+    // display: flex;
+    // width: max-content;
+    // border: 2px, solid;
+    // border-color: $pink;
+    display: inline-flex;
+  }
 
   div {
     margin-left: 1rem;
     margin-right: 1rem;
     @include text-norm($white);
   }
+}
+
+.contact {
+  @include btn-gen($pop);
 }

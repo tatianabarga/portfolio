@@ -6,6 +6,11 @@ export default function NavBar() {
   return (
     <header className="nav-container">
       <nav className="navbar" aria-label="Global"> {/* add a logo of my name on left */}
+        <div className="logo font-logo">
+          <Link href="/">
+            <a>Tatiana</a>
+          </Link>
+        </div>
         <div>
           <Link href="/">
             <a>Home</a>
@@ -26,13 +31,12 @@ export default function NavBar() {
             <a>Resume</a>
           </Link>
         </div>
-        <div className="bttn"> {/* Make this look like a button */}
-          <Link href="/contact">
+        <div className="btn-div inline-block"> {/* Make this look like a button */}
+          <button type="button" className="contact">
             <a>Get in touch</a>
-          </Link>
+          </button>
         </div>
       </nav>
-      {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
     </header>
 
   );

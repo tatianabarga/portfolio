@@ -19,7 +19,12 @@ $dark: #413a49;
   font-weight: 400;
 }
 
-@mixin pill ($color) {
+// buttons
+@mixin btn-gen ($color) {
   background-color: $color;
-
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 8%;
 }
