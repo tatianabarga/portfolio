@@ -14,7 +14,7 @@ export default function Resume() {
   }, []);
 
   return (
-    <div>
+    <div className="res-cont">
       <a
         href={resume}
         target="_blank"

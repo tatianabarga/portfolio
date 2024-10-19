@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.ed-cont {
+  dt {
+    @include subHeader($yellow);
+  }
+
+  dd {
+    @include text-sm($yellow);
+  }
+
+  .date {
+    @include text-sm($yellow);
+    font-style: italic;
+  }
+
+  .main-header {
+    @include header-lg($yellow);
+  }
+}

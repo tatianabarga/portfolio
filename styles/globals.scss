@@ -4,13 +4,13 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 @import './navbar';
 @import './variables';
+@import './view.scss';
+@import './components/education.scss';
+@import './components/skills.scss';
+@import './pages/resume.scss';
 
 html,
 body {
-  // padding-left: 10%;
-  // padding-right: 10%;
-  // padding-top: 2%;
-  // padding-bottom: 2%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
