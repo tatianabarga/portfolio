@@ -1,0 +1,13 @@
+@import './variables';
+
+.sec-header {
+  @include secHeader($white);
+}
+
+.container {
+  margin: 10%;
+}
+
+.bttn {
+  @include pill($pop)
+}

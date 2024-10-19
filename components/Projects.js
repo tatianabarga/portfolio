@@ -16,9 +16,9 @@ export default function Projects() {
 
   return (
     <div>
-      <h2>Projects</h2>
+      <p className="sec-header">Projects</p>
       {projectsArray.map((project) => (
-        <div>
+        <div className="card">
           <p>{project.name}</p>
           <p>{project.techStack}</p>
           <p>{project.skills}</p>
