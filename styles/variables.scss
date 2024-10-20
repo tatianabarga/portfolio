@@ -59,6 +59,18 @@ $writing: "Segoe Script", cursive;
   padding-right: $sides;
 }
 
+@mixin pill ($font-color, $bg-color) {
+  border-radius: 1rem;
+  @include text-norm($font-color, $norm);
+  font-weight: 500;
+  margin: 0.5rem;
+  @include padding(1rem, 0.5rem);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  background-color: $bg-color;
+}
+
 // buttons
 @mixin btn-gen ($color) {
   background-color: $color;
