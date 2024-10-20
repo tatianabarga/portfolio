@@ -2,19 +2,19 @@
 
 .ed-cont {
   dt {
-    @include subHeader($yellow);
+    @include subHeader($yellow, $norm);
   }
 
   dd {
-    @include text-sm($yellow);
+    @include text-sm($yellow, $norm);
   }
 
   .date {
-    @include text-sm($yellow);
+    @include text-sm($yellow, $norm);
     font-style: italic;
   }
 
   .main-header {
-    @include header-lg($yellow);
+    @include header-lg($yellow, $writing);
   }
 }

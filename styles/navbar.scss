@@ -17,7 +17,7 @@
     margin-right: auto;
     display: flex;
     align-self: flex-start;
-    @include secHeader($white);
+    @include secHeader($white, $writing);
   }
 
   // .btn-div {
@@ -31,7 +31,7 @@
   div {
     margin-left: 1rem;
     margin-right: 1rem;
-    @include text-norm($white);
+    @include text-norm($white, $norm);
   }
 }
 
