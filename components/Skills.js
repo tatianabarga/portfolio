@@ -23,9 +23,8 @@ export default function Skills() {
       <h2 className="subheader">Skills</h2>
       <div className="sk-cont">
         <div className="sk-subcont">
-          <h2 className="subheader">Tech:</h2>
           {techSkillsArr.map((skill) => (
-            <div className="skill">
+            <div className="skill skill--tech">
               <div className="skill-txt">
                 <p>{skill}</p>
               </div>
@@ -33,9 +32,8 @@ export default function Skills() {
           ))}
         </div>
         <div className="sk-subcont">
-          <h2 className="subheader">Soft Skills:</h2>
           {softSkillsArr.map((skill) => (
-            <div className="skill">
+            <div className="skill skill--soft">
               <div className="skill-txt">
                 <p>{skill}</p>
               </div>

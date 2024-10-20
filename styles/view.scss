@@ -1,7 +1,7 @@
 @import './variables';
 
 .sec-header {
-  @include secHeader($white);
+  @include secHeader($white, $norm);
 }
 
 // .container {

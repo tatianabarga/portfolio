@@ -8,38 +8,42 @@ $dark: #413a49;
 
 //text
 $norm: 'Helvetica', Arial, sans-serif;
+$writing: "Segoe Script", cursive;
+// $brush: 'French Script MT', cursive;
 
-@mixin header-lg ($txtcolor) {
+@mixin header-lg ($txtcolor, $font) {
   font-size: 170%;
   color: $txtcolor;
-  font-weight: 500;
-  font-family: $norm;
+  font-weight: 700;
+  font-family: $font;
 }
 
-@mixin secHeader ($txtcolor) {
+@mixin secHeader ($txtcolor, $font) {
   font-size: 150%;
   color: $txtcolor;
   font-weight: 500;
+  font-family: $font;
 }
 
-@mixin subHeader ($txtcolor) {
+@mixin subHeader ($txtcolor, $font) {
   font-size: 100%;
   color: $txtcolor;
   font-weight: 500;
-  font-family: $norm;
+  font-family: $font;
 }
 
-@mixin text-norm ($txtcolor) {
+@mixin text-norm ($txtcolor, $font) {
   font-size: 90%;
   color: $txtcolor;
   font-weight: 400;
+  font-family: $font;
 }
 
-@mixin text-sm ($txtcolor) {
+@mixin text-sm ($txtcolor, $font) {
   font-size: 70%;
   color: $txtcolor;
   font-weight: 400;
-  font-family: $norm;
+  font-family: $font;
 }
 
 //styles
@@ -53,6 +57,18 @@ $norm: 'Helvetica', Arial, sans-serif;
   padding-bottom: $tb;
   padding-left: $sides;
   padding-right: $sides;
+}
+
+@mixin pill ($font-color, $bg-color) {
+  border-radius: 1rem;
+  @include text-norm($font-color, $norm);
+  font-weight: 500;
+  margin: 0.5rem;
+  @include padding(1rem, 0.5rem);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  background-color: $bg-color;
 }
 
 // buttons

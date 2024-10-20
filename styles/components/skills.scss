@@ -1,26 +1,26 @@
 @import '../variables.scss';
 
-.sk-cont {
-  display: flex;
-  flex-direction: row;
+// .sk-cont {
+  // display: flex;
+  // flex-direction: row;
   // justify-items: center;
-}
+// }
 
 .sk-subcont {
-  width: 50%;
+  // width: 50%;
   // justify-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
 }
 
-.skill {
-  background-color: $yellow;
-  border-radius: 1rem;
-  @include text-norm($blue);
-  font-weight: 500;
-  margin: 0.5rem;
-  @include padding(1rem, 0.5rem);
-  width: 20%;
-  display: flex;
-  justify-content: center;
+
+.skill--soft{
+  @include pill($blue, $dark);
+}
+
+.skill--tech {
+  @include pill($blue, $white);
 }
 
 .skill-txt {
@@ -31,5 +31,6 @@
 }
 
 .subheader {
-  @include secHeader($yellow);
+  @include secHeader($yellow, $norm);
+  margin-bottom: 4%;
 }

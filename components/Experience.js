@@ -15,15 +15,23 @@ export default function Experience() {
   }, [experiences]);
 
   return (
-    <div>
-      <h2>Experience</h2>
+    <div className="ex-cont">
+      <div className="ex-header">
+        <h3 className="">Experience</h3>
+      </div>
       {exArray.map((experience) => (
         <div>
-          <p>{experience.company}</p>
-          <p>{experience.jobTitle}</p>
-          <p>{experience.date}</p>
-          <p>{experience.skills}</p>
-          <p>{experience.description}</p>
+          <dl className="divide-y divide-gray-100">
+            <div className="ex-element px-4 py-6 sm:grid sm:grid-cols-6 sm:gap-4 sm:px-0">
+              <dt className="ex-title text-sm font-medium leading-6 text-gray-900">{experience.date}</dt>
+              <div className="ex-desc col-span-5">
+                <dd>{experience.company}</dd>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2">{experience.jobTitle}</dd>
+                <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2">{experience.description}</dd>
+              </div>
+
+            </div>
+          </dl>
         </div>
       ))}
     </div>

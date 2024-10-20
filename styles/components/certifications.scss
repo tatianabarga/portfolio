@@ -1,0 +1,14 @@
+@import '../variables.scss';
+@import './skills.scss';
+
+.cert {
+  @include pill($white, $blue);
+}
+
+.cert-header {
+  @include header-lg($dark, $writing);
+}
+
+.cert-cont {
+  background-color: $white;
+}
