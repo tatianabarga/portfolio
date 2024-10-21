@@ -4,6 +4,7 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import { getResume } from '../utils/data/linksData';
 import Certifications from '../components/Certifications';
+import ContactInfo from '../components/ContactInfo';
 
 export default function Resume() {
   const [resume, setResume] = useState({});
@@ -26,9 +27,10 @@ export default function Resume() {
         </button>
       </a>
       <Skills />
-      <Education />
+      <Education fromPage="resume" />
       <Experience />
-      <Certifications />
+      <Certifications fromPage="resume" />
+      <ContactInfo />
     </div>
   );
 }

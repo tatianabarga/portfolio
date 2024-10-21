@@ -17,7 +17,7 @@
     margin-right: auto;
     display: flex;
     align-self: flex-start;
-    @include secHeader($white, $writing);
+    @include secHeader($pink, $writing);
   }
 
   // .btn-div {
@@ -28,13 +28,15 @@
   //   display: inline-flex;
   // }
 
+
+
   div {
     margin-left: 1rem;
     margin-right: 1rem;
-    @include text-norm($white, $norm);
+    @include text-norm($pink, $writing);
   }
 }
 
 .contact {
-  @include btn-gen($pop);
+  @include btn-gen($pop, $white, $writing);
 }

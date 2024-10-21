@@ -1,20 +1,63 @@
 @import '../variables.scss';
 
-.ed-cont {
-  dt {
-    @include subHeader($yellow, $norm);
-  }
+.ed {
+  &--resume {
+    // @extend .ed;
 
-  dd {
-    @include text-sm($yellow, $norm);
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include rounded;
 
-  .date {
-    @include text-sm($yellow, $norm);
-    font-style: italic;
-  }
+    .main-header {
+      @include header-lg($pink, $writing);
+      margin-top: 2%;
+    }
 
-  .main-header {
-    @include header-lg($yellow, $writing);
-  }
+    .ei-cont {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      // align-items: center;
+    }
+
+    .ed-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1%;
+      align-items: center;
+    }
+
+    .title {
+      @include subHeader($dark, $norm);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10%;;
+    }
+
+    .sparkle {
+      width: 4rem;
+      height: 4rem;
+      padding: 2%;
+      margin-right: 5%;
+    }
+
+    .school {
+      margin-right: 20%;
+    }
+
+    .desc {
+      @include text-sm($pink, $norm);
+      margin: auto;
+    }
+
+    .date {
+      @include text-sm($pink, $norm);
+      font-style: italic;
+    }
+}
+
+
 }
