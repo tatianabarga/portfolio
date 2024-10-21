@@ -72,8 +72,10 @@ $writing: "Segoe Script", cursive;
 }
 
 // buttons
-@mixin btn-gen ($color) {
+@mixin btn-gen ($color, $txt-color, $font) {
   background-color: $color;
+  font-family: $font;
+  color: $txt-color;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;

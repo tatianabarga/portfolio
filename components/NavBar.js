@@ -31,13 +31,11 @@ export default function NavBar() {
             <a>Resume</a>
           </Link>
         </div>
-        <div className="btn-div"> {/* Make this look like a button */}
-          <Link href="/contact" passHref>
-            <button type="button" className="contact">
-              <a>Get in touch</a>
-            </button>
-          </Link>
-        </div>
+        <Link className="btn-div" href="/contact" passHref>
+          <button type="button" className="contact">
+            <a>Get in touch</a>
+          </button>
+        </Link>
       </nav>
     </header>
 

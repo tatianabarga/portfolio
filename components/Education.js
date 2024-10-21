@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import Image from 'next/image';
 import getAllEducation from '../utils/data/educationData';
 
-export default function Education() {
+export default function Education({ fromPage }) {
   const [educations, setEducations] = useState({});
   const [edArray, setEdArray] = useState([]);
 
@@ -15,23 +17,28 @@ export default function Education() {
   }, [educations]);
 
   return (
-    <div>
-      <div className="ed-cont">
-        <div>
-          <h2 className="main-header">Education</h2>
-          {edArray.map((education) => (
-            <div>
-              <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-                <div className="border-t border-gray-200 pt-4">
-                  <dt>{education.school}</dt>
-                  {/* <p className="date">{education.date}</p> */}
-                  <dd>{education.description}</dd>
-                </div>
-              </dl>
+    <div className={fromPage === 'resume' ? 'ed ed--resume' : 'ed ed--home'}>
+      <h2 className="main-header">Education</h2>
+      <div className="ei-cont">
+        {edArray.map((education) => (
+          <div className="ed-item">
+            <div className="title">
+              <span className="sparkle">
+                <Image src="/../public/sparkleDark.png" width="100%" height="100%" />
+              </span>
+              <p className="school">
+                {education.school}
+              </p>
             </div>
-          ))}
-        </div>
+            {/* <p className="date">{education.date}</p> */}
+            <div className="desc">{education.description}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
+
+Education.propTypes = {
+  fromPage: PropTypes.string.isRequired,
+};
