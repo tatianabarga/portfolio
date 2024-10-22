@@ -18,7 +18,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      // align-items: center;
     }
 
     .ed-item {
@@ -34,7 +33,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 10%;;
+      justify-content: start;
     }
 
     .sparkle {
@@ -50,7 +49,9 @@
 
     .desc {
       @include text-sm($pink, $norm);
-      margin: auto;
+      margin-right: 6%;
+      display: flex;
+      justify-content: end;
     }
 
     .date {
