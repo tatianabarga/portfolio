@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { getSoftSkills, getTechSkills } from '../utils/data/skillsData';
 
-export default function Skills() {
+export default function Skills({ fromPage }) {
   const [softSkills, setSoftSkills] = useState({});
   const [techSkills, setTechSkills] = useState({});
   const [softSkillsArr, setSoftSkillsArr] = useState([]);
@@ -19,7 +20,7 @@ export default function Skills() {
   }, [softSkills, techSkills]);
 
   return (
-    <div>
+    <div className={fromPage === 'resume' ? 'skills skills--resume' : 'skills skills--home'}>
       <h2 className="subheader">Skills</h2>
       <div className="sk-cont">
         <div className="sk-subcont">
@@ -44,3 +45,7 @@ export default function Skills() {
     </div>
   );
 }
+
+Skills.propTypes = {
+  fromPage: PropTypes.string.isRequired,
+};

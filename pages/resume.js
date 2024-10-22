@@ -26,7 +26,7 @@ export default function Resume() {
           View Official Resume
         </button>
       </a>
-      <Skills />
+      <Skills fromPage="resume" />
       <Education fromPage="resume" />
       <Experience />
       <Certifications fromPage="resume" />

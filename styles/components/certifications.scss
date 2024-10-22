@@ -24,8 +24,10 @@
   //   margin: 4%;
   // }
 
+
   &--resume {
     @extend .cert;
+    @include rounded;
 
     .cert-cont {
       background-color: $white;
