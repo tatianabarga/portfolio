@@ -17,7 +17,7 @@
     margin-right: auto;
     display: flex;
     align-self: flex-start;
-    @include secHeader($pink, $writing);
+    @include bg-boi($pink, $writing);
   }
 
   // .btn-div {
@@ -33,7 +33,8 @@
   div {
     margin-left: 1rem;
     margin-right: 1rem;
-    @include text-norm($pink, $writing);
+    @include secHeader-sm($pink, $writing);
+    font-weight: bold;
   }
 }
 

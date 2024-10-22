@@ -3,3 +3,56 @@
 .res-cont {
   @include rounded;
 }
+
+.page-header {
+  @include bg-boi($pop, $writing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+// .skills-sec {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 1rem;
+//   margin: 1%;
+//   align-items: center;
+// }
+
+.skills-sec {
+  margin-left: 66%;
+  margin-bottom: 2%;
+}
+
+.ed-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2%;
+    align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // align-items: center;
+}
+
+.resume-btn {
+  margin-top: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  @include btn-gen($pink, $white, $writing);
+
+  // width: ;
+
+  // button {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   text-wrap: wrap;
+  // }
+}
+
+.ed-comp {
+  grid-column: span 2;
+}

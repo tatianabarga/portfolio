@@ -12,8 +12,17 @@ $writing: "Segoe Script", cursive;
 $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 // $brush: 'French Script MT', cursive;
 
+@mixin bg-boi ($txtcolor, $font) {
+  // font-size: 250%;
+  font-size: 3.5vw;
+  color: $txtcolor;
+  font-weight: 700;
+  font-family: $font;
+}
+
 @mixin header-lg ($txtcolor, $font) {
-  font-size: 170%;
+  // font-size: 170%;
+  font-size: 2.5vw;
   color: $txtcolor;
   font-weight: 700;
   font-family: $font;
@@ -26,29 +35,37 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   font-family: $font;
 }
 
-@mixin subHeader-bold ($txtcolor, $font) {
-  font-size: 100%;
-  color: $txtcolor;
-  font-weight: bold;
-  font-family: $font;
-}
-
-@mixin subHeader ($txtcolor, $font) {
-  font-size: 100%;
+@mixin secHeader-sm ($txtcolor, $font) {
+  font-size: 130%;
   color: $txtcolor;
   font-weight: 500;
   font-family: $font;
 }
 
+@mixin subHeader ($txtcolor, $font) {
+  // font-size: 100%;
+  font-size: 1.15vw;
+  color: $txtcolor;
+  font-weight: 500;
+  font-family: $font;
+}
+
+@mixin subHeader-bold ($txtcolor, $font) {
+  @include subHeader($txtcolor, $font);
+  font-weight: bold;
+}
+
 @mixin text-norm-bold ($txtcolor, $font) {
-  font-size: 90%;
+  // font-size: 90%;
+  font-size: 1vw;
   color: $txtcolor;
   font-weight: bold;
   font-family: $font;
 }
 
 @mixin text-norm ($txtcolor, $font) {
-  font-size: 90%;
+  // font-size: 90%;
+  font-size: 1vw;
   color: $txtcolor;
   font-weight: lighter;
   font-family: $font;
@@ -74,6 +91,13 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   border-radius: 1.3rem;
 }
 
+@mixin margins ($sides, $tb) {
+  margin-top: $tb;
+  margin-bottom: $tb;
+  margin-left: $sides;
+  margin-right: $sides;
+}
+
 @mixin padding ($sides, $tb) {
   padding-top: $tb;
   padding-bottom: $tb;
@@ -85,7 +109,7 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   border-radius: 1rem;
   font-weight: 500;
   margin: 0.5rem;
-  @include padding(2%, 1%);
+  @include padding(4%, 1.5%);
   display: flex;
   justify-content: center;
   background-color: $bg-color;
@@ -97,9 +121,8 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   background-color: $color;
   font-family: $font;
   color: $txt-color;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include rounded;
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: .5rem;
+  @include padding(2%, 1%);
 }

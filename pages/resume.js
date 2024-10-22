@@ -17,21 +17,38 @@ export default function Resume() {
 
   return (
     <div className="res-cont">
-      <h2>Resume</h2>
-      <Skills fromPage="resume" />
-      <Education fromPage="resume" />
-      <a
-        href={resume}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          View Official Resume
-        </button>
-      </a>
-      <Experience fromPage="resume" />
-      <Certifications fromPage="resume" />
-      <ContactInfo fromPage="resume" />
+      <div className="page-header">
+        <h2>Resume</h2>
+      </div>
+
+      <div className="resume-components">
+        <div className="skills-sec">
+          <Skills fromPage="resume" />
+        </div>
+        <div className="ed-sec">
+          <div className="resume-btn">
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button">
+                View Official Resume
+              </button>
+            </a>
+          </div>
+          <div className="ed-comp">
+            <Education fromPage="resume" />
+          </div>
+        </div>
+        <div className="exp-sec">
+          <Experience fromPage="resume" />
+        </div>
+        <div className="cert-sec">
+          <Certifications fromPage="resume" />
+          <ContactInfo fromPage="resume" />
+        </div>
+      </div>
     </div>
   );
 }
