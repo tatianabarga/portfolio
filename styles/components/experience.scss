@@ -44,7 +44,7 @@
     }
 
     .date{
-      @include subHeader($white, $typewriter);
+      @include subHeader-bold($white, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -65,7 +65,7 @@
       align-items: center;
 
       p {
-        @include text-norm($white, $typewriter);
+        @include text-norm-bold($white, $typewriter);
         display: flex;
         justify-content: end;
       }
@@ -92,5 +92,24 @@
       }
     }
 
+    .exp-sk-cont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    .exp-skill {
+      @include pill($dark);
+    }
+    
+    .exp-sk-txt {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      
+      @include text-norm-bold($white, $typewriter);
+    }
   }
 }

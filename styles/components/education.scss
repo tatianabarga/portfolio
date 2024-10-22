@@ -30,7 +30,7 @@
     }
 
     .title {
-      @include subHeader($dark, $typewriter);
+      @include subHeader-bold($dark, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -49,7 +49,7 @@
     }
 
     .desc {
-      @include text-smaller($pink, $typewriter);
+      @include text-norm($pink, $typewriter);
       margin-right: 6%;
       display: flex;
       justify-content: end;

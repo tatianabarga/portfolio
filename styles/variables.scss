@@ -26,6 +26,13 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   font-family: $font;
 }
 
+@mixin subHeader-bold ($txtcolor, $font) {
+  font-size: 100%;
+  color: $txtcolor;
+  font-weight: bold;
+  font-family: $font;
+}
+
 @mixin subHeader ($txtcolor, $font) {
   font-size: 100%;
   color: $txtcolor;

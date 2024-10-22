@@ -26,7 +26,20 @@ const getTechSkills = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getJobSkills = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/skills/jobSkills.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getSoftSkills,
   getTechSkills,
+  getJobSkills,
 };

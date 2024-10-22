@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import { getEmail, getPhone } from '../utils/data/aboutmeData';
 import { getLinkedin } from '../utils/data/linksData';
-import Link from 'next/link';
 
 export default function ContactInfo({ fromPage }) {
   const [email, setEmail] = useState('');

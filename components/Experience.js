@@ -2,19 +2,24 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 import getAllExperience from '../utils/data/experienceData';
+import { getJobSkills } from '../utils/data/skillsData';
 
 export default function Experience({ fromPage }) {
   const [experiences, setExperiences] = useState({});
+  const [jobSkills, setJobSkills] = useState({});
   const [exArray, setExArray] = useState([]);
+  const [jsArray, setJsArray] = useState([]);
 
   useEffect(() => {
     getAllExperience().then(setExperiences);
+    getJobSkills().then(setJobSkills);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setExArray(Object.values(experiences));
-  }, [experiences]);
+    setJsArray(Object.values(jobSkills));
+  }, [experiences, jobSkills]);
 
   return (
     <div className={fromPage === 'resume' ? 'exp exp--resume' : 'exp exp--home'}>
@@ -43,8 +48,16 @@ export default function Experience({ fromPage }) {
                   <p className="desc">{experience.description}</p>
                   <p className="desc-bullets">{experience.descBullets}</p>
                 </div>
-
               </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="exp-sk-cont">
+        {jsArray.map((skill) => (
+          <div className="exp-skill">
+            <div className="exp-sk-txt">
+              <p>{skill}</p>
             </div>
           </div>
         ))}

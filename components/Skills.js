@@ -26,7 +26,7 @@ export default function Skills({ fromPage }) {
         <div className="sk-subcont">
           {techSkillsArr.map((skill) => (
             <div className="skill skill--tech">
-              <div className="skill-txt">
+              <div className="skill-txt--tech">
                 <p>{skill}</p>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function Skills({ fromPage }) {
         <div className="sk-subcont">
           {softSkillsArr.map((skill) => (
             <div className="skill skill--soft">
-              <div className="skill-txt">
+              <div className="skill-txt--soft">
                 <p>{skill}</p>
               </div>
             </div>
