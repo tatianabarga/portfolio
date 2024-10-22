@@ -109,7 +109,7 @@
       // margin-left: auto;
       // margin-right: auto;
       text-align: center;
-      @include text-norm-bold($white, $typewriter);
+      @include text-norm($white, $typewriter);
     }
   }
 }

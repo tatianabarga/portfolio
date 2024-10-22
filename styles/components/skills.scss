@@ -37,7 +37,7 @@
       // text-align: center;
       
       &--soft {
-        @include text-norm-bold($white, $typewriter);
+        @include text-norm($white, $typewriter);
       }
 
       &--tech {
