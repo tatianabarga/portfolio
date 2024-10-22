@@ -28,6 +28,7 @@
   &--resume {
     @extend .cert;
     @include rounded;
+    
 
     .cert-cont {
       background-color: $white;
@@ -35,6 +36,8 @@
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
+      margin: 1%;
+      @include rounded;
     }
 
     .cert-header {

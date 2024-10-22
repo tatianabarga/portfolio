@@ -8,6 +8,7 @@
 
 .skills {
   @include padding(3%, 3%);
+  margin-right: 10%;
 
   &--resume {
     background-color: $pink;

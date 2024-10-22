@@ -92,6 +92,14 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   border-radius: 1.3rem;
 }
 
+@mixin rounded-more () {
+  border-radius: 4rem;
+}
+
+@mixin rounded-less () {
+  border-radius: .5rem;
+}
+
 @mixin margins ($sides, $tb) {
   margin-top: $tb;
   margin-bottom: $tb;
