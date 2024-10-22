@@ -4,6 +4,7 @@
   &--resume {
     // @extend .ed;
 
+    background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +30,7 @@
     }
 
     .title {
-      @include subHeader($dark, $norm);
+      @include subHeader($dark, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -48,14 +49,14 @@
     }
 
     .desc {
-      @include text-sm($pink, $norm);
+      @include text-smaller($pink, $typewriter);
       margin-right: 6%;
       display: flex;
       justify-content: end;
     }
 
     .date {
-      @include text-sm($pink, $norm);
+      @include text-smaller($pink, $norm);
       font-style: italic;
     }
 }

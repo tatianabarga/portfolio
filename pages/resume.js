@@ -17,6 +17,9 @@ export default function Resume() {
 
   return (
     <div className="res-cont">
+      <h2>Resume</h2>
+      <Skills fromPage="resume" />
+      <Education fromPage="resume" />
       <a
         href={resume}
         target="_blank"
@@ -26,11 +29,9 @@ export default function Resume() {
           View Official Resume
         </button>
       </a>
-      <Skills fromPage="resume" />
-      <Education fromPage="resume" />
-      <Experience />
+      <Experience fromPage="resume" />
       <Certifications fromPage="resume" />
-      <ContactInfo />
+      <ContactInfo fromPage="resume" />
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { getEmail, getPhone } from '../utils/data/aboutmeData';
 import { getLinkedin } from '../utils/data/linksData';
+import Link from 'next/link';
 
-export default function ContactInfo() {
+export default function ContactInfo({ fromPage }) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [linkedin, setLinkedin] = useState('');
@@ -15,10 +17,23 @@ export default function ContactInfo() {
 
   return (
     // TODO: put email and phone next to icons, put linked in as embedded link by icon
-    <div>
-      <h2> Email: {email} </h2>
-      <h2> Phone: {phone} </h2>
-      <h2> LinkedIn: {linkedin} </h2>
+    <div className={fromPage === 'resume' ? 'contact-info contact-info--resume' : 'contact-info contact-info--contact'}>
+      <div> {email} </div>
+      <div> {phone} </div>
+      <div>
+        <Link
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          passHref
+        >
+          <p className="cert-txt"> LinkedIn </p>
+        </Link>
+      </div>
     </div>
   );
 }
+
+ContactInfo.propTypes = {
+  fromPage: PropTypes.string.isRequired,
+};

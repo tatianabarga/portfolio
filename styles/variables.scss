@@ -7,8 +7,9 @@ $yellow: #fad954;
 $dark: #413a49;
 
 //text
-$norm: 'Helvetica', Arial, sans-serif;
+$norm: Verdana, Geneva, sans-serif;
 $writing: "Segoe Script", cursive;
+$typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 // $brush: 'French Script MT', cursive;
 
 @mixin header-lg ($txtcolor, $font) {
@@ -32,21 +33,28 @@ $writing: "Segoe Script", cursive;
   font-family: $font;
 }
 
+@mixin text-norm-bold ($txtcolor, $font) {
+  font-size: 90%;
+  color: $txtcolor;
+  font-weight: bold;
+  font-family: $font;
+}
+
 @mixin text-norm ($txtcolor, $font) {
   font-size: 90%;
+  color: $txtcolor;
+  font-weight: lighter;
+  font-family: $font;
+}
+
+@mixin text-sm ($txtcolor, $font) {
+  font-size: 80%;
   color: $txtcolor;
   font-weight: 400;
   font-family: $font;
 }
 
-@mixin text-norm-bold ($txtcolor, $font) {
-  font-size: 90%;
-  color: $txtcolor;
-  font-weight: 800;
-  font-family: $font;
-}
-
-@mixin text-sm ($txtcolor, $font) {
+@mixin text-smaller ($txtcolor, $font) {
   font-size: 70%;
   color: $txtcolor;
   font-weight: 400;
@@ -66,15 +74,15 @@ $writing: "Segoe Script", cursive;
   padding-right: $sides;
 }
 
-@mixin pill ($font-color, $bg-color) {
+@mixin pill ($bg-color) {
   border-radius: 1rem;
-  @include text-norm($font-color, $norm);
   font-weight: 500;
   margin: 0.5rem;
   @include padding(2%, 1%);
   display: flex;
   justify-content: center;
   background-color: $bg-color;
+  flex-wrap: wrap;
 }
 
 // buttons

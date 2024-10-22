@@ -29,7 +29,7 @@ export default function Certifications({ fromPage }) {
                 rel="noopener noreferrer"
                 passHref
               >
-                <p>{cert.label}</p>
+                <p className="cert-txt">{cert.label}</p>
               </Link>
             </div>
           ))}

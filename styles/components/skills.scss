@@ -22,11 +22,11 @@
     }
 
     .skill--tech {
-      @include pill($pink, $white);
+      @include pill($white);
     }
     
     .skill--soft{
-      @include pill($pink, $dark);
+      @include pill($dark);
     }
 
     .skill-txt {
@@ -34,7 +34,7 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      @include text-norm-bold($pink, $norm);
+      @include text-norm-bold($pink, $typewriter);
     }
 
     .subheader {
