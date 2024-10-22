@@ -21,11 +21,11 @@
       justify-content: start;
     }
 
-    .skill--tech {
+    .skill--soft {
       @include pill($dark);
     }
     
-    .skill--soft{
+    .skill--tech{
       @include pill($white);
     }
 
@@ -33,14 +33,14 @@
       display: flex;
       // margin-left: auto;
       // margin-right: auto;
-      text-align: center;
+      // text-align: center;
       
-      &--tech {
+      &--soft {
         @include text-norm-bold($white, $typewriter);
       }
 
-      &--soft {
-        @include text-norm-bold($pink, $typewriter);
+      &--tech {
+        @include text-norm-bold($pink-dark, $typewriter);
       }
     }
 

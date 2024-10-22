@@ -101,6 +101,7 @@
 
     .exp-skill {
       @include pill($dark);
+      // display: inline-block;
     }
     
     .exp-sk-txt {

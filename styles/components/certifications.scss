@@ -39,7 +39,8 @@
 
     .cert-header {
       @include header-lg($dark, $writing);
-      margin-top: 2%;
+      margin-top: 4%;
+      margin-bottom: 2%;
     }
 
     .ci-cont {
@@ -49,7 +50,7 @@
     }
 
     .cert-item {
-      @include pill($blue);
+      @include pill-sq($blue);
       margin: 4%;
     }
 
@@ -58,7 +59,7 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      @include text-norm($white, $typewriter);
+      @include text-norm-bold($white, $typewriter);
     }
   }
 }

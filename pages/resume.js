@@ -32,7 +32,7 @@ export default function Resume() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button type="button">
+              <button type="button" className="res-btn-txt">
                 View Official Resume
               </button>
             </a>
@@ -45,8 +45,12 @@ export default function Resume() {
           <Experience fromPage="resume" />
         </div>
         <div className="cert-sec">
-          <Certifications fromPage="resume" />
-          <ContactInfo fromPage="resume" />
+          <div className="cert-comp">
+            <Certifications fromPage="resume" />
+          </div>
+          <div className="cont-comp">
+            <ContactInfo fromPage="resume" />
+          </div>
         </div>
       </div>
     </div>

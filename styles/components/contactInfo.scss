@@ -2,17 +2,26 @@
 
 .contact-info {
   &--resume {
-    background-color: $dark;
-    @include rounded;
-    @include padding(2%, 2%);
+    margin: 2%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    .cont-item-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-around;
 
-    div {
-      @include pill($white);
-      @include text-norm($dark, $typewriter);
+      .cont-item {
+        @include pill($white);
+        @include text-norm($dark, $typewriter);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3%;
+
+        * {
+          text-wrap: nowrap;
+        }
+      }
     }
   }
 }

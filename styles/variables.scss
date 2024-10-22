@@ -1,6 +1,7 @@
 //colors
 $white: #e2cfcb;
 $pink: #c99aa1;
+$pink-dark: #b67f88;
 $pop: #bf6152;
 $blue: #576d7d;
 $yellow: #fad954;
@@ -105,7 +106,7 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   padding-right: $sides;
 }
 
-@mixin pill ($bg-color) {
+@mixin pill-sq ($bg-color) {
   border-radius: 1rem;
   font-weight: 500;
   margin: 0.5rem;
@@ -114,6 +115,28 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   justify-content: center;
   background-color: $bg-color;
   flex-wrap: wrap;
+
+  * {
+    text-align: center
+  }
+}
+
+@mixin pill ($bg-color) {
+  border-radius: 1rem;
+  font-weight: 500;
+  margin: 1%;
+  @include padding(4%, 1.5%);
+  display: flex;
+  justify-content: center;
+  background-color: $bg-color;
+  flex-wrap: wrap;
+
+  * {
+    text-align: center
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  }
 }
 
 // buttons
