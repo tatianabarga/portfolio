@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+.contact-info {
+  &--resume {
+    margin: 2%;
+
+    .cont-item-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-around;
+
+      .cont-item {
+        @include pill($white);
+        @include text-norm($dark, $typewriter);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3%;
+
+        * {
+          text-wrap: nowrap;
+        }
+      }
+    }
+  }
+}

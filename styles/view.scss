@@ -1,8 +1,49 @@
 @import './variables';
 
-.sec-header {
-  @include secHeader($white, $norm);
+.app-cont {
+  position: relative;
+  // height: 100vh;
+  height: min-height;
+  background-image: url(../public/background.jpg);
+  // background-repeat: no-repeat;
+  background-size: cover;
+  // background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  @include padding(0%, 2%);
+
+  * {
+    position: relative;
+  }
 }
+
+.noauth-content-cont {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  @include rounded-more;
+  padding-top: 1%;
+}
+
+// .bg-img {
+  // width: 100%;
+  // width: fit-content;
+  // height: 100%;
+  // z-index: -1;
+
+  // * {
+  //   width: 150%;
+  // }
+// }
+
+// .auth-cont {
+//   // width: fit-content;
+//   // height:fit-content;
+
+// }
+// .sec-header {
+//   @include secHeader($white, $norm);
+// }
 
 // .container {
 //   margin: 10%;

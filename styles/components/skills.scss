@@ -6,31 +6,49 @@
   // justify-items: center;
 // }
 
-.sk-subcont {
-  // width: 50%;
-  // justify-items: center;
-  display: flex;
-  flex-direction: row;
-  margin: 2%;
-}
+.skills {
+  @include padding(3%, 3%);
+  margin-right: 10%;
 
+  &--resume {
+    background-color: $pink;
+    @include rounded;
+    @include padding(4%, 4%);
 
-.skill--soft{
-  @include pill($blue, $dark);
-}
+    .sk-subcont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
 
-.skill--tech {
-  @include pill($blue, $white);
-}
+    .skill--soft {
+      @include pill($dark);
+    }
+    
+    .skill--tech{
+      @include pill($white);
+    }
 
-.skill-txt {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+    .skill-txt {
+      display: flex;
+      // margin-left: auto;
+      // margin-right: auto;
+      // text-align: center;
+      
+      &--soft {
+        @include text-norm-bold($white, $typewriter);
+      }
 
-.subheader {
-  @include secHeader($yellow, $norm);
-  margin-bottom: 4%;
+      &--tech {
+        @include text-norm-bold($pink-dark, $typewriter);
+      }
+    }
+
+    .subheader {
+      @include header-lg($dark, $writing);
+      margin-left: 2%;
+      margin-bottom: 2%;
+    }
+  }
 }

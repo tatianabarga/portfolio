@@ -1,18 +1,29 @@
 //colors
 $white: #e2cfcb;
 $pink: #c99aa1;
+$pink-dark: #b67f88;
 $pop: #bf6152;
 $blue: #576d7d;
 $yellow: #fad954;
 $dark: #413a49;
 
 //text
-$norm: 'Helvetica', Arial, sans-serif;
+$norm: Verdana, Geneva, sans-serif;
 $writing: "Segoe Script", cursive;
+$typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 // $brush: 'French Script MT', cursive;
 
+@mixin bg-boi ($txtcolor, $font) {
+  // font-size: 250%;
+  font-size: 3.5vw;
+  color: $txtcolor;
+  font-weight: 700;
+  font-family: $font;
+}
+
 @mixin header-lg ($txtcolor, $font) {
-  font-size: 170%;
+  // font-size: 170%;
+  font-size: 2.5vw;
   color: $txtcolor;
   font-weight: 700;
   font-family: $font;
@@ -25,21 +36,50 @@ $writing: "Segoe Script", cursive;
   font-family: $font;
 }
 
-@mixin subHeader ($txtcolor, $font) {
-  font-size: 100%;
+@mixin secHeader-sm ($txtcolor, $font) {
+  font-size: 130%;
   color: $txtcolor;
   font-weight: 500;
   font-family: $font;
 }
 
+@mixin subHeader ($txtcolor, $font) {
+  // font-size: 100%;
+  font-size: 1.15vw;
+  color: $txtcolor;
+  font-weight: 500;
+  font-family: $font;
+}
+
+@mixin subHeader-bold ($txtcolor, $font) {
+  @include subHeader($txtcolor, $font);
+  font-weight: bold;
+}
+
+@mixin text-norm-bold ($txtcolor, $font) {
+  // font-size: 90%;
+  font-size: 1vw;
+  color: $txtcolor;
+  font-weight: bold;
+  font-family: $font;
+}
+
 @mixin text-norm ($txtcolor, $font) {
-  font-size: 90%;
+  // font-size: 90%;
+  font-size: 1vw;
+  color: $txtcolor;
+  font-weight: lighter;
+  font-family: $font;
+}
+
+@mixin text-sm ($txtcolor, $font) {
+  font-size: 80%;
   color: $txtcolor;
   font-weight: 400;
   font-family: $font;
 }
 
-@mixin text-sm ($txtcolor, $font) {
+@mixin text-smaller ($txtcolor, $font) {
   font-size: 70%;
   color: $txtcolor;
   font-weight: 400;
@@ -49,7 +89,22 @@ $writing: "Segoe Script", cursive;
 //styles
 
 @mixin rounded () {
-  border-radius: 0.35rem;
+  border-radius: 1.3rem;
+}
+
+@mixin rounded-more () {
+  border-radius: 4rem;
+}
+
+@mixin rounded-less () {
+  border-radius: .5rem;
+}
+
+@mixin margins ($sides, $tb) {
+  margin-top: $tb;
+  margin-bottom: $tb;
+  margin-left: $sides;
+  margin-right: $sides;
 }
 
 @mixin padding ($sides, $tb) {
@@ -59,16 +114,37 @@ $writing: "Segoe Script", cursive;
   padding-right: $sides;
 }
 
-@mixin pill ($font-color, $bg-color) {
+@mixin pill-sq ($bg-color) {
   border-radius: 1rem;
-  @include text-norm($font-color, $norm);
   font-weight: 500;
   margin: 0.5rem;
-  @include padding(1rem, 0.5rem);
-  width: 20%;
+  @include padding(4%, 1.5%);
   display: flex;
   justify-content: center;
   background-color: $bg-color;
+  flex-wrap: wrap;
+
+  * {
+    text-align: center
+  }
+}
+
+@mixin pill ($bg-color) {
+  border-radius: 1rem;
+  font-weight: 500;
+  margin: 1%;
+  @include padding(4%, 1.5%);
+  display: flex;
+  justify-content: center;
+  background-color: $bg-color;
+  flex-wrap: wrap;
+
+  * {
+    text-align: center
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  }
 }
 
 // buttons
@@ -76,9 +152,8 @@ $writing: "Segoe Script", cursive;
   background-color: $color;
   font-family: $font;
   color: $txt-color;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include rounded;
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: .5rem;
+  @include padding(2%, 1%);
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { getSoftSkills, getTechSkills } from '../utils/data/skillsData';
 
-export default function Skills() {
+export default function Skills({ fromPage }) {
   const [softSkills, setSoftSkills] = useState({});
   const [techSkills, setTechSkills] = useState({});
   const [softSkillsArr, setSoftSkillsArr] = useState([]);
@@ -19,13 +20,13 @@ export default function Skills() {
   }, [softSkills, techSkills]);
 
   return (
-    <div>
+    <div className={fromPage === 'resume' ? 'skills skills--resume' : 'skills skills--home'}>
       <h2 className="subheader">Skills</h2>
       <div className="sk-cont">
         <div className="sk-subcont">
           {techSkillsArr.map((skill) => (
             <div className="skill skill--tech">
-              <div className="skill-txt">
+              <div className="skill-txt--tech">
                 <p>{skill}</p>
               </div>
             </div>
@@ -34,7 +35,7 @@ export default function Skills() {
         <div className="sk-subcont">
           {softSkillsArr.map((skill) => (
             <div className="skill skill--soft">
-              <div className="skill-txt">
+              <div className="skill-txt--soft">
                 <p>{skill}</p>
               </div>
             </div>
@@ -44,3 +45,7 @@ export default function Skills() {
     </div>
   );
 }
+
+Skills.propTypes = {
+  fromPage: PropTypes.string.isRequired,
+};

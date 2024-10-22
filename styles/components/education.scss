@@ -4,6 +4,7 @@
   &--resume {
     // @extend .ed;
 
+    background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +19,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      // align-items: center;
     }
 
     .ed-item {
@@ -30,11 +30,11 @@
     }
 
     .title {
-      @include subHeader($dark, $norm);
+      @include subHeader-bold($dark, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 10%;;
+      justify-content: start;
     }
 
     .sparkle {
@@ -49,12 +49,14 @@
     }
 
     .desc {
-      @include text-sm($pink, $norm);
-      margin: auto;
+      @include text-norm($pink, $typewriter);
+      margin-right: 6%;
+      display: flex;
+      justify-content: end;
     }
 
     .date {
-      @include text-sm($pink, $norm);
+      @include text-smaller($pink, $norm);
       font-style: italic;
     }
 }
