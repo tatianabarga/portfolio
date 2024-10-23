@@ -4,7 +4,7 @@ import ContactInfo from '../components/ContactInfo';
 export default function contact() {
   return (
     <div>
-      <ContactInfo />
+      <ContactInfo fromPage="contact" />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 import { getGithub, getLinkedin } from '../utils/data/linksData';
 
-export default function Socials() {
+export default function Socials({ fromPage }) {
   const [gitHub, setGitHub] = useState('');
   const [linkedIn, setLinkedIn] = useState('');
 
@@ -12,7 +13,7 @@ export default function Socials() {
   }, []);
 
   return (
-    <div className="socials">
+    <div className={fromPage === 'resume' ? 'socials socials--resume' : 'socials socials--home'}>
       <div className="social-item">
         <Link
           href={gitHub}
@@ -36,3 +37,7 @@ export default function Socials() {
     </div>
   );
 }
+
+Socials.propTypes = {
+  fromPage: PropTypes.string.isRequired,
+};

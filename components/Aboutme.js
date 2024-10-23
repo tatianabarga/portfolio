@@ -12,9 +12,6 @@ export default function Aboutme() {
 
   return (
     <div className="aboutme-cont">
-      <div className="aboutme-header">
-        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati </h2>
-      </div>
       <div className="aboutme-desc">
         <div className="aboutme-title">
           <h2 className="aboutme-title-txt"> I&apos;m a {title} </h2>

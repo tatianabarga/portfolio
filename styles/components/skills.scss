@@ -8,9 +8,59 @@
 
 .skills {
   @include padding(3%, 3%);
-  margin-right: 10%;
+
+  &--home {
+    // margin-right: 10%;
+    // background-color: $white;
+    @include rounded;
+    // @include padding(4%, 4%);
+    // width: 100%;
+    // height: 50%;
+
+    .subheader {
+      @include header-lg($dark, $writing);
+      margin-left: 10%;
+      // margin-bottom: 6%;
+    }
+
+    // .sk-cont {
+
+    // }
+
+    .sk-subcont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      @include margins(0%, 10%);
+    }
+
+    .skill--soft {
+      @include pill($dark);
+    }
+    
+    .skill--tech{
+      @include pill($pink);
+    }
+
+    .skill-txt {
+      display: flex;
+      // margin-left: auto;
+      // margin-right: auto;
+      // text-align: center;
+      
+      &--soft {
+        @include text-norm($white, $typewriter);
+      }
+
+      &--tech {
+        @include text-norm-bold($white, $typewriter);
+      }
+    }
+  }
 
   &--resume {
+    margin-right: 10%;
     background-color: $pink;
     @include rounded;
     @include padding(4%, 4%);
