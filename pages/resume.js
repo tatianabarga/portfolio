@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+// import Image from 'next/image';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
@@ -19,6 +20,10 @@ export default function Resume() {
     <div className="res-cont">
       <div className="page-header">
         <h2>Resume</h2>
+      </div>
+      <div className="res-bg-img-cont">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/portrait.png" className="portrait-img" alt="" />
       </div>
 
       <div className="resume-components">
