@@ -16,8 +16,7 @@ export default function ContactInfo({ fromPage }) {
   }, []);
 
   return (
-    // TODO: put email and phone next to icons, put linked in as embedded link by icon
-    <div className={fromPage === 'resume' ? 'contact-info contact-info--resume' : 'contact-info contact-info--contact'}>
+    <div className={fromPage === 'resume' ? 'contact-info contact-info--resume' : 'contact-info contact-info--aboutme'}>
       <div className="cont-item-cont">
         <div className="cont-item">
           <div>

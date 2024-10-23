@@ -1,5 +1,6 @@
 //colors
 $white: #e2cfcb;
+$white-st: rgba(226, 207, 203, 0.75);
 $pink: #c99aa1;
 $pink-dark: #b67f88;
 $pop: #bf6152;
@@ -12,6 +13,13 @@ $norm: Verdana, Geneva, sans-serif;
 $writing: "Segoe Script", cursive;
 $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 // $brush: 'French Script MT', cursive;
+
+@mixin bg-boi-xl ($txtcolor, $font) {
+  font-size: 4vw;
+  color: $txtcolor;
+  font-weight: 1500;
+  font-family: $font;
+}
 
 @mixin bg-boi ($txtcolor, $font) {
   // font-size: 250%;

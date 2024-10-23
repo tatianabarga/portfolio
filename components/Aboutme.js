@@ -11,10 +11,18 @@ export default function Aboutme() {
   }, []);
 
   return (
-    <div>
-      <h2> Tatiana Barga </h2>
-      <h2> {title} </h2>
-      <h2> {description} </h2>
+    <div className="aboutme-cont">
+      <div className="aboutme-header">
+        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati </h2>
+      </div>
+      <div className="aboutme-desc">
+        <div className="aboutme-title">
+          <h2 className="aboutme-title-txt"> I&apos;m a {title} </h2>
+        </div>
+        <div className="aboutme-bio">
+          <h2 className="aboutme-bio-txt"> {description} </h2>
+        </div>
+      </div>
     </div>
   );
 }

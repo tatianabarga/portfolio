@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.social-item {
+  @include pill($pop);
+  @include text-norm-bold($white, $typewriter);
+  @include margins(5%, 2%);
+}
