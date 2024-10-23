@@ -61,10 +61,16 @@
 }
 
 .resume-btn {
-  margin-top: 75%;
+  margin-top: 40%;
   margin-left: auto;
   margin-right: auto;
+  height: 30%; 
+  width: 50;
   @include btn-gen($pink, $white, $writing);
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   // width: ;
 
@@ -77,6 +83,10 @@
   * {
     @include margins(2%, 1%);
   }
+}
+
+.exp-sec {
+  grid-column: span 2;
 }
 
 .ed-comp {
