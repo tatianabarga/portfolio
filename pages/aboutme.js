@@ -16,8 +16,10 @@ export default function aboutme() {
       <div className="socials-comp">
         <Socials />
       </div>
-      <div className="cont-comp">
-        <ContactInfo fromPage="aboutme" />
+      <div className="cont-comp-grid">
+        <div className="cont-comp-am cont-comp">
+          <ContactInfo fromPage="aboutme" />
+        </div>
       </div>
     </div>
   );
