@@ -38,8 +38,21 @@ const getResume = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getInstagram = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/links/instagram.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getLinkedin,
   getGithub,
   getResume,
+  getInstagram,
 };
