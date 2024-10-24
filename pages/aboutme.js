@@ -6,7 +6,10 @@ import Socials from '../components/Socials';
 export default function aboutme() {
   return (
     <div>
-      <div className="res-bg-img-cont-am">
+      <div className="aboutme-header">
+        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati </h2>
+      </div>
+      <div className="bg-img-cont-am">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/portrait.png" className="portrait-img-am" alt="" />
       </div>
@@ -16,8 +19,10 @@ export default function aboutme() {
       <div className="socials-comp">
         <Socials />
       </div>
-      <div className="cont-comp">
-        <ContactInfo fromPage="aboutme" />
+      <div className="cont-comp-grid">
+        <div className="cont-comp-am cont-comp">
+          <ContactInfo fromPage="aboutme" />
+        </div>
       </div>
     </div>
   );

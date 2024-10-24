@@ -10,7 +10,7 @@
   margin-left: 10%;
 }
 
-.res-bg-img-cont-am {
+.bg-img-cont-am {
   position: absolute;
   z-index: 1;
   width:100%;
@@ -54,10 +54,17 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 2%;
-  justify-content: space-around;
+  margin-left: 8%;
+  justify-content: start;
 }
 
 .cont-comp-am {
   margin-bottom: 5%;
   background-color: $dark;
+  @include rounded-less();
+  @include padding(2%, 1%);
+  padding-right: 6%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }

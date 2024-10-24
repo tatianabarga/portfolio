@@ -17,7 +17,7 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 @mixin bg-boi-xl ($txtcolor, $font) {
   font-size: 4vw;
   color: $txtcolor;
-  font-weight: 1500;
+  font-weight: bold;
   font-family: $font;
 }
 
