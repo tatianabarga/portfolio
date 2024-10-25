@@ -5,12 +5,24 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
+    height: 100%;
+    // width: 100%;
 
     .social-item {
       @include pill($pop);
       @include text-norm-bold($white, $typewriter);
-      @include margins(5%, 2%);
+      @include margins(0%, 5%);
+      @include padding(6%, 1.5%);
+      letter-spacing: 0.2vw;
+      height: 20%;
+
+      * {
+        @include secHeader-sm($white, $typewriter);
+        font-size: 1.35vw;
+        letter-spacing: 0.15vw;
+        margin-top: 1%;
+      }
     }
   }
 
@@ -46,8 +58,6 @@
         @include secHeader-sm($white, $typewriter);
         font-size: 1.35vw;
         letter-spacing: 0.15vw;
-        // font-size: 1.15vw;
-        // font-weight: 700;
         margin-top: 1%;
       }
     }
