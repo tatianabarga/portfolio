@@ -19,14 +19,8 @@
 
     .subheader {
       @include header-lg($dark, $writing);
-      // font-size: 3vw;
       margin-left: 10%;
-      // margin-bottom: 6%;
     }
-
-    // .sk-cont {
-
-    // }
 
     .sk-subcont {
       display: flex;

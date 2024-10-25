@@ -48,10 +48,21 @@ function Home() {
             <ContactInfo fromPage="resume" />
           </div>
         </div>
-        <div>
+        <div className="proj-comp-cont">
           <Projects />
         </div>
+        <div className="exp-sec">
+          <Experience fromPage="resume" />
+        </div>
         <div className="ed-sec">
+          <div className="ed-comp">
+            <Education fromPage="resume" />
+          </div>
+        </div>
+        <div className="cert-sec">
+          <div className="cert-comp">
+            <Certifications fromPage="resume" />
+          </div>
           <div className="resume-btn">
             <a
               href={resume}
@@ -62,17 +73,6 @@ function Home() {
                 View Official Resume
               </button>
             </a>
-          </div>
-          <div className="ed-comp">
-            <Education fromPage="resume" />
-          </div>
-        </div>
-        <div className="exp-sec">
-          <Experience fromPage="resume" />
-        </div>
-        <div className="cert-sec">
-          <div className="cert-comp">
-            <Certifications fromPage="resume" />
           </div>
         </div>
       </div>
