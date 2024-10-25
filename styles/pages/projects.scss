@@ -1,0 +1,81 @@
+@import '../variables.scss';
+
+.proj-pg {
+  // background-image: url(../../public/Clouds.png);
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-img-cont-proj {
+  width: 100%;
+  // height: 100%;
+  z-index: 1;
+  position: absolute;
+  margin: 5%;
+}
+
+.cloud-img {
+  padding: 3%;
+  // object-fit: cover;
+}
+
+.proj-pg-cont {
+  z-index: 2;
+  margin: 5%;
+}
+
+.sec-header {
+  @include bg-boi($dark, $writing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-bottom: 1%;
+}
+
+.proj-name {
+  @include header-lg($dark, $writing);
+  margin-left: 10%;
+  z-index: 2;
+}
+
+.proj-ts {
+  @include text-norm($dark, $typewriter);
+  margin-right: 6%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: end;
+  z-index: 2;
+}
+
+.proj-sk {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  // @include margins(0%, 10%);
+
+  * {
+    @include text-norm($white, $typewriter);
+    @include pill($dark);
+  }
+  z-index: 2;
+}
+
+.proj-desc {
+  @include text-norm($dark, $typewriter);
+  margin-right: 6%;
+  margin-bottom: 2%;
+  // display: flex;
+  // justify-content: end;
+  z-index: 2;
+}
+
+
+

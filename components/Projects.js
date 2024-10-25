@@ -15,14 +15,67 @@ export default function Projects() {
   }, [projects]);
 
   return (
-    <div>
-      <p className="sec-header">Projects</p>
-      {projectsArray.map((project) => (
-        <div className="card">
-          <p>{project.name}</p>
-          <p>{project.techStack}</p>
-          <p>{project.skills}</p>
-          <p>{project.description}</p>
+    <div className="project-sec">
+      {projectsArray.map((thisProject) => (
+        <div className="project-item">
+          <p className="proj-name">{thisProject.name}</p>
+          <div className="proj-links">
+            {thisProject.deployedProject
+              ? (
+                <div className="proj-link-item">
+                  <a
+                    href={thisProject.deployedProject}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="link-txt">Deployed Project</p>
+                  </a>
+                </div>
+              ) : null}
+            {thisProject.repoClient
+              ? (
+                <div className="proj-link-item">
+                  <a
+                    href={thisProject.repoClient}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="link-txt">Client Repository</p>
+                  </a>
+                </div>
+              ) : null}
+            {thisProject.repoServer
+              ? (
+                <div className="proj-link-item">
+                  <a
+                    href={thisProject.repoServer}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="link-txt">Server Repository</p>
+                  </a>
+                </div>
+              ) : null}
+            {thisProject.loom
+              ? (
+                <div className="proj-link-item">
+                  <a
+                    href={thisProject.loom}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="link-txt">Demo</p>
+                  </a>
+                </div>
+              ) : null}
+          </div>
+          <p className="proj-ts">{thisProject.techStack}</p>
+          <div className="proj-sk">
+            {thisProject.skills.split(', ').map((skill) => (
+              <div className="skill-item">{skill}</div>
+            ))}
+          </div>
+          <p className="proj-desc">{thisProject.description}</p>
         </div>
       ))}
     </div>
