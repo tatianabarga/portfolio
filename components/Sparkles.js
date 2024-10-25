@@ -6,9 +6,9 @@ export default function Sparkles() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
-        viewBox="0 0 111 84"
-        height="84"
-        width="111"
+        // viewBox="0 0 111 84"
+        // height="84"
+        // width="111"
       >
         <path
           className="plus-one"
