@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import getAllCertifications from '../utils/data/certificationsData';
 
 export default function Certifications({ fromPage }) {
@@ -23,14 +22,13 @@ export default function Certifications({ fromPage }) {
         <div className="cert ci-cont">
           {certArray.map((cert) => (
             <div className="cert cert-item">
-              <Link
+              <a
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                passHref
               >
                 <p className="cert-txt">{cert.label}</p>
-              </Link>
+              </a>
             </div>
           ))}
         </div>
