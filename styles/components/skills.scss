@@ -19,6 +19,7 @@
 
     .subheader {
       @include header-lg($dark, $writing);
+      font-size: 3vw;
       margin-left: 10%;
       // margin-bottom: 6%;
     }
@@ -32,29 +33,30 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: start;
-      @include margins(0%, 10%);
+      @include margins(0%, 5%);
     }
 
     .skill--soft {
-      @include pill($dark);
+        @include pill($dark);
+        @include padding(2.5%, 1%);
+        @include rounded-more();
     }
     
     .skill--tech{
-      @include pill($pink);
+        @include pill($pink);
+        @include padding(2.5%, 1%);
+        @include rounded-more();
     }
 
     .skill-txt {
       display: flex;
-      // margin-left: auto;
-      // margin-right: auto;
-      // text-align: center;
       
       &--soft {
         @include text-norm($white, $typewriter);
       }
 
       &--tech {
-        @include text-norm-bold($white, $typewriter);
+        @include text-norm-bold($white-ew, $typewriter);
       }
     }
   }
