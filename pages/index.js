@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Certifications from '../components/Certifications';
 import ContactInfo from '../components/ContactInfo';
 import Education from '../components/Education';
+import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import { getResume } from '../utils/data/linksData';
@@ -46,6 +47,9 @@ function Home() {
           <div className="cont-comp-home">
             <ContactInfo fromPage="resume" />
           </div>
+        </div>
+        <div>
+          <Projects />
         </div>
         <div className="ed-sec">
           <div className="resume-btn">
