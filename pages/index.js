@@ -17,13 +17,13 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <div className="page-header-home">
-        <h2>Tatiana Barga</h2>
-      </div>
-      <div className="res-bg-img-cont">
+    <div className="home-pg">
+      <div className="home-bg-img-cont">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/portrait.png" className="portrait-img" alt="" />
+      </div>
+      <div className="page-header-home">
+        <h2>Tatiana Barga</h2>
       </div>
       <div className="aboutme-comp">
         <Aboutme />
