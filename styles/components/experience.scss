@@ -1,6 +1,111 @@
 @import '../variables.scss';
 
 .exp {
+  &--home {
+
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    @include rounded;
+
+    .exp-header {
+      @include header-lg($pink, $writing);
+    }
+
+    .exp-items-cont {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .exp-element {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5%;
+      margin: 1%;
+      align-items: center;
+    }
+
+    .title {
+      @include subHeader($dark, $typewriter);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .sparkle {
+      width: 20%;
+      height: 20%;
+      padding: 2%;
+      margin-right: 5%;
+    }
+
+    .date{
+      @include subHeader-bold($white, $typewriter);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .info {
+      grid-column: span 3;
+    }
+
+    .sub-title {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+
+      p {
+        @include text-norm-bold($white, $typewriter);
+        display: flex;
+        justify-content: end;
+      }
+
+      .divider {
+        margin-right: 2%;
+        margin-left: 2%;
+      }
+
+    }
+
+    .desc-info {
+      margin-right: 6%;
+      p {
+        @include text-sm($dark, $typewriter);
+        display: flex;
+        justify-content: end;
+      }
+
+      .desc-bullets {
+        margin-top: 2%;
+        font-style: italic;
+      }
+    }
+
+    .exp-sk-cont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    .exp-skill {
+      @include pill-lg($dark);
+    }
+    
+    .exp-sk-txt {
+      display: flex;
+      text-align: center;
+      @include text-norm($white, $typewriter);
+    }
+  }
+
   &--resume {
 
     background-color: $blue;
@@ -53,9 +158,6 @@
 
     .info {
       grid-column: span 3;
-      // flex-grow: 4;
-      // align-items: center;
-
     }
 
     .sub-title {
@@ -88,7 +190,6 @@
       .desc-bullets {
         margin-top: 2%;
         font-style: italic;
-        // font-family: $norm;
       }
     }
 
@@ -100,14 +201,11 @@
     }
 
     .exp-skill {
-      @include pill($dark);
-      // display: inline-block;
+      @include pill-lg($dark);
     }
     
     .exp-sk-txt {
       display: flex;
-      // margin-left: auto;
-      // margin-right: auto;
       text-align: center;
       @include text-norm($white, $typewriter);
     }

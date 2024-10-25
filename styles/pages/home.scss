@@ -59,7 +59,7 @@
   height: 45%;
   width: 25%;
   margin-bottom: 6%;
-  padding-left: 5%;
+  // padding-left: 5%;
 }
 
 .cont-comp-home {
@@ -75,4 +75,9 @@
   @include rounded-less;
   @include padding(1%, 1%);
 
+}
+
+.proj-comp-cont {
+  @include padding(5%, 0%);
+  padding-bottom: 2%;
 }
