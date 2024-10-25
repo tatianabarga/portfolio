@@ -33,11 +33,11 @@ function Home() {
           <div className="skills-comp-home">
             <Skills fromPage="home" />
           </div>
-          <div className="socials-comp-home">
-            <Socials className="socials-comp-home" fromPage="home" />
-          </div>
           <div className="cont-comp-home">
             <ContactInfo fromPage="resume" />
+          </div>
+          <div className="socials-comp-home">
+            <Socials className="socials-comp-home" fromPage="home" />
           </div>
         </div>
         <div className="ed-sec">
