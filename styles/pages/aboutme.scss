@@ -61,7 +61,7 @@
 .cont-comp-am {
   margin-bottom: 5%;
   background-color: $dark;
-  @include rounded-less();
+  @include rounded();
   @include padding(2%, 1%);
   padding-right: 6%;
   padding-left: 2%;

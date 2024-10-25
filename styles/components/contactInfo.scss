@@ -16,7 +16,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 3%;
+        @include margins(3%, 7%);
+        @include padding(7%, 3%);
 
         * {
           text-wrap: nowrap;
@@ -41,6 +42,7 @@
         flex-direction: row;
         align-items: center;
         @include margins(3%, 5%);
+        @include padding(7%, 3%);
 
         * {
           text-wrap: nowrap;
