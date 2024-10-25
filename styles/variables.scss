@@ -156,7 +156,6 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   }
 }
 
-// buttons
 @mixin btn-gen ($color, $txt-color, $font) {
   background-color: $color;
   font-family: $font;
@@ -166,3 +165,11 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   border-radius: .5rem;
   @include padding(2%, 1%);
 }
+
+//animations
+
+@mixin hover {
+  background-color: $dark;
+  transition: background-color 0.3s ease;
+}
+

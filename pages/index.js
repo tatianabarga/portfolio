@@ -7,6 +7,7 @@ import Skills from '../components/Skills';
 import { getResume } from '../utils/data/linksData';
 import Aboutme from '../components/Aboutme';
 import Socials from '../components/Socials';
+import Sparkles from '../components/Sparkles';
 
 function Home() {
   const [resume, setResume] = useState({});
@@ -24,6 +25,9 @@ function Home() {
       </div>
       <div className="page-header-home">
         <h2>Tatiana Barga</h2>
+      </div>
+      <div className="sparkles-comp">
+        <Sparkles />
       </div>
       <div className="aboutme-comp">
         <Aboutme />
