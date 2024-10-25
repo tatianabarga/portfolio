@@ -43,9 +43,25 @@
 //   align-items: center;
 // }
 
-.skills-sec {
-  margin-left: 66%;
-  margin-bottom: 2%;
+.skills-sec { 
+  display: grid;
+  grid-template-columns: repeat(36, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin: 2%;
+
+}
+
+.socials-comp {
+  grid-column: span 23;
+  margin-left: 55%;
+  align-self: flex-start;
+  height: 50%;
+}
+
+.skills-comp {
+  grid-column: span 13;
+  margin-left: 2%;
 }
 
 .ed-sec {

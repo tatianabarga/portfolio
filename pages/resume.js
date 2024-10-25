@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import { getResume } from '../utils/data/linksData';
 import Certifications from '../components/Certifications';
 import ContactInfo from '../components/ContactInfo';
+import Socials from '../components/Socials';
 
 export default function Resume() {
   const [resume, setResume] = useState({});
@@ -28,7 +29,12 @@ export default function Resume() {
 
       <div className="resume-components">
         <div className="skills-sec">
-          <Skills fromPage="resume" />
+          <div className="socials-comp">
+            <Socials fromPage="resume" />
+          </div>
+          <div className="skills-comp">
+            <Skills fromPage="resume" />
+          </div>
         </div>
         <div className="ed-sec">
           <div className="resume-btn">
