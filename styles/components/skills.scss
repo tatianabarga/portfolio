@@ -37,9 +37,7 @@
     }
 
     .skill--soft {
-        @include pill($dark);
-        @include padding(2.5%, 1%);
-        @include rounded-more();
+      @include pill-lg($dark);
     }
     
     .skill--tech{

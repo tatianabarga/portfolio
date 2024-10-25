@@ -100,7 +100,8 @@
     }
 
     .exp-skill {
-      @include pill($dark);
+      @include pill-lg($dark);
+
       // display: inline-block;
     }
     

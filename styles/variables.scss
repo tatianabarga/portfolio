@@ -151,10 +151,13 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 
   * {
     text-align: center
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
   }
+}
+
+@mixin pill-lg ($bg-color) {
+  @include pill($bg-color);
+  @include padding(2.5%, 1%);
+  @include rounded-more();
 }
 
 @mixin btn-gen ($color, $txt-color, $font) {
