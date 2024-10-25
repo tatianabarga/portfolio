@@ -15,14 +15,17 @@ export default function Projects() {
   }, [projects]);
 
   return (
-    <div>
-      <p className="sec-header">Projects</p>
-      {projectsArray.map((project) => (
-        <div className="card">
-          <p>{project.name}</p>
-          <p>{project.techStack}</p>
-          <p>{project.skills}</p>
-          <p>{project.description}</p>
+    <div className="project-sec">
+      {projectsArray.map((thisProject) => (
+        <div className="project-item">
+          <p className="proj-name">{thisProject.name}</p>
+          <p className="proj-ts">{thisProject.techStack}</p>
+          <div className="proj-sk">
+            {thisProject.skills.split(', ').map((skill) => (
+              <div className="skill-item">{skill}</div>
+            ))}
+          </div>
+          <p className="proj-desc">{thisProject.description}</p>
         </div>
       ))}
     </div>
