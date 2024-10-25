@@ -50,9 +50,22 @@ const getInstagram = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// const getProjectLinks = ({ project }) => new Promise((resolve, reject) => {
+//   fetch(`${endpoint}/links/${project}.json`, {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//   })
+//     .then((response) => response.json())
+//     .then((data) => resolve(data))
+//     .catch(reject);
+// });
+
 export {
   getLinkedin,
   getGithub,
   getResume,
   getInstagram,
+  // getProjectLinks,
 };
