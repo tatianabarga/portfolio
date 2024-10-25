@@ -45,7 +45,8 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 }
 
 @mixin secHeader-sm ($txtcolor, $font) {
-  font-size: 130%;
+  // font-size: 130%;
+  font-size: 1.8vw;
   color: $txtcolor;
   font-weight: 500;
   font-family: $font;

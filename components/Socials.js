@@ -6,6 +6,13 @@ export default function Socials({ fromPage }) {
   const [gitHub, setGitHub] = useState('');
   const [linkedIn, setLinkedIn] = useState('');
   const [instagram, setInstagram] = useState('');
+  const [classLabel, setClassLabel] = useState('');
+
+  useEffect(() => {
+    if (fromPage === 'resume') setClassLabel('socials socials--resume');
+    if (fromPage === 'aboutme') setClassLabel('socials socials--aboutme');
+    if (fromPage === 'home') setClassLabel('socials socials--home');
+  }, [fromPage]);
 
   useEffect(() => {
     getLinkedin().then(setLinkedIn);
@@ -14,7 +21,8 @@ export default function Socials({ fromPage }) {
   }, []);
 
   return (
-    <div className={fromPage === 'resume' ? 'socials socials--resume' : 'socials socials--home'}>
+    // eslint-disable-next-line no-nested-ternary
+    <div className={classLabel}>
       <div className="social-item">
         <a
           href={gitHub}
@@ -26,20 +34,20 @@ export default function Socials({ fromPage }) {
       </div>
       <div className="social-item">
         <a
-          href={linkedIn}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p className="cert-txt">LinkedIn</p>
-        </a>
-      </div>
-      <div className="social-item">
-        <a
           href={instagram}
           target="_blank"
           rel="noopener noreferrer"
         >
           <p className="cert-txt">Instagram</p>
+        </a>
+      </div>
+      <div className="social-item">
+        <a
+          href={linkedIn}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="cert-txt">LinkedIn</p>
         </a>
       </div>
     </div>

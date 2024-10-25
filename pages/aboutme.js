@@ -17,7 +17,7 @@ export default function aboutme() {
         <Aboutme />
       </div>
       <div className="socials-comp">
-        <Socials />
+        <Socials fromPage="aboutme" />
       </div>
       <div className="cont-comp-grid">
         <div className="cont-comp-am cont-comp">

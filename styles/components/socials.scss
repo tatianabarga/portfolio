@@ -14,16 +14,42 @@
     }
   }
 
-  &--resume {
+  &--aboutme {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
+    margin-left: 3%;
 
     .social-item {
       @include pill($pop);
       @include text-norm-bold($white, $typewriter);
+      @include margins(2%, 2%);
+    }
+  }
+
+  &--resume {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 65%;
+    height: 100%;
+
+    .social-item {
+      @include pill($dark);
       @include margins(5%, 2%);
+      height: 20%;
+      @include padding(6%, 1.5%);
+
+      * {
+        @include secHeader-sm($white, $typewriter);
+        font-size: 1.35vw;
+        letter-spacing: 0.15vw;
+        // font-size: 1.15vw;
+        // font-weight: 700;
+        margin-top: 1%;
+      }
     }
   }
 }
