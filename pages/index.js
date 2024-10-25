@@ -7,6 +7,7 @@ import Skills from '../components/Skills';
 import { getResume } from '../utils/data/linksData';
 import Aboutme from '../components/Aboutme';
 import Socials from '../components/Socials';
+// import Sparkles from '../components/Sparkles';
 
 function Home() {
   const [resume, setResume] = useState({});
@@ -22,9 +23,15 @@ function Home() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/portrait.png" className="portrait-img" alt="" />
       </div>
-      <div className="page-header-home">
-        <h2>Tatiana Barga</h2>
+      <div className="header-sparkles">
+        <div className="page-header-home">
+          <h2>Tatiana Barga</h2>
+        </div>
+        {/* <div className="sparkles-comp">
+          <Sparkles />
+        </div> */}
       </div>
+
       <div className="aboutme-comp">
         <Aboutme />
       </div>

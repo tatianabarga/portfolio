@@ -9,7 +9,7 @@ export default function NavBar() {
       <nav className="navbar" aria-label="Global"> {/* add a logo of my name on left */}
         <div className="logo">
           <span className="sparkle-nav">
-            <Image src="/../public/sparkleMulti.png" width="100%" height="100%" />
+            <Image src="/../public/sparklePink.png" width="50%" height="70%" />
           </span>
           <Link href="/">
             <a>Tatiana</a>

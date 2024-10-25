@@ -11,7 +11,7 @@ export default function aboutme() {
         <img src="/portrait.png" className="portrait-img-am" alt="" />
       </div>
       <div className="aboutme-header">
-        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati </h2>
+        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati.. </h2>
       </div>
       <div className="aboutme-comp">
         <Aboutme />
