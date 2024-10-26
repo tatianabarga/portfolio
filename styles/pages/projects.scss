@@ -23,7 +23,6 @@
 
 .cloud-img {
   padding: 3%;
-  // object-fit: cover;
 }
 
 .proj-pg-cont {
@@ -58,12 +57,10 @@
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
-  // margin-left: 3%;
 
   .proj-link-item {
     @include pill($pop);
     @include text-norm-bold($dark, $typewriter);
-    // @include margins(2%, 2%);
     margin-bottom: 2%;
     letter-spacing: 0.15vw;
   }
@@ -86,7 +83,6 @@
   flex-wrap: wrap;
   justify-content: start;
   width: 75%;
-  // @include margins(0%, 10%);
 
   * {
     @include text-norm($white, $typewriter);
@@ -103,8 +99,6 @@
   @include text-norm($dark, $typewriter);
   margin-right: 6%;
   margin-bottom: 2%;
-  // display: flex;
-  // justify-content: end;
   z-index: 2;
 }
 
