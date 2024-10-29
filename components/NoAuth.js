@@ -10,7 +10,7 @@ function NoAuth({ component: Component, pageProps }) {
         // className="w-75 mx-auto p-3 mb-4 mt-4 rounded-lg"
         className="noauth-content-cont"
         style={{
-          backgroundColor: '#e2cfcb',
+          backgroundColor: '#d5bfc2',
         }}
       >
         <NavBar />
