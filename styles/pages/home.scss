@@ -16,8 +16,8 @@
 }
 
 .page-header-home {
-  @include bg-boi-xl($dark, $writing);
-  font-size: 6vw;
+  @include bg-boi-xl($dark, $typewriter);
+  // font-size: 6vw;
   display: flex;
   flex-direction: row;
   align-items: start;
