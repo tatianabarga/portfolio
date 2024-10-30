@@ -72,3 +72,10 @@
   @include padding(5%, 0%);
   padding-bottom: 2%;
 }
+
+.resume-btn {
+  
+  &:hover {
+    @include hover($dark, $white);
+  }
+}

@@ -54,8 +54,13 @@
 
     .cert-item {
       @include pill-sq($blue);
-      margin: 4%;
+      margin: 4%;    
+      
+      &:hover {
+        @include hover($pink, $white);
+      }
     }
+
 
     .cert-txt {
       display: flex;

@@ -25,7 +25,7 @@
       }
 
       &:hover {
-        @include hover();
+        @include hover($dark, $white);
       }
     }
   }
@@ -41,6 +41,10 @@
       @include pill($pop);
       @include text-norm-bold($white, $typewriter);
       @include margins(2%, 2%);
+
+      &:hover {
+        @include hover($dark, $white);
+      }
     }
   }
 
@@ -64,6 +68,17 @@
         letter-spacing: 0.15vw;
         margin-top: 1%;
       }
+
+      &:hover {
+        @include hover($dark, $white);
+      }
     }
+  }
+}
+
+.social-item {
+  
+  &:hover {
+    @include hover($dark, $white);
   }
 }
