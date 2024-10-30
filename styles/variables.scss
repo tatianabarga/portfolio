@@ -182,8 +182,9 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 
 //animations
 
-@mixin hover {
-  background-color: $dark;
+@mixin hover ($bg-color, $txt-color) {
+  background-color: $bg-color;
+  color: $txt-color;
   transition: background-color 0.3s ease;
 }
 

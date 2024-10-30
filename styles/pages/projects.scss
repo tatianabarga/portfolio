@@ -63,7 +63,12 @@
     @include text-norm-bold($dark, $typewriter);
     margin-bottom: 2%;
     letter-spacing: 0.15vw;
+
+    &:hover {
+      @include hover($dark, $white);
+    }
   }
+
 }
 
 .proj-ts {

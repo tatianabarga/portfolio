@@ -43,6 +43,17 @@
   margin-left: 55%;
   align-self: flex-start;
   height: 50%;
+
+  * {
+    * {
+      &:hover {
+        @include hover($pink, $white);
+      }
+    }
+
+  }
+  
+
 }
 
 .skills-comp {

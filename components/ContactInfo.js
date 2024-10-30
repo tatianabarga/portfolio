@@ -28,7 +28,7 @@ export default function ContactInfo({ fromPage }) {
             {phone}
           </div>
         </div>
-        <div className="cont-item">
+        <div className="cont-item li-item">
           <Link
             href={linkedin}
             target="_blank"

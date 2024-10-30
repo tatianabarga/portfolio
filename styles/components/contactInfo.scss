@@ -51,6 +51,7 @@
     }
   }
 
+
   // &--resume {
   //   margin: 2%;
 
@@ -74,4 +75,10 @@
   //     }
   //   }
   // }
+}
+
+.li-item {
+  &:hover {
+    @include hover($pink, $dark);
+  }
 }
