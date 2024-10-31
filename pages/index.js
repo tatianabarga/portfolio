@@ -67,13 +67,13 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="exp-sec">
-          <Experience fromPage="resume" />
-        </div>
         <div className="ed-sec">
           <div className="ed-comp">
             <Education fromPage="resume" />
           </div>
+        </div>
+        <div className="exp-sec">
+          <Experience fromPage="resume" />
         </div>
       </div>
     </div>

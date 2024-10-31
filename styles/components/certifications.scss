@@ -39,7 +39,7 @@
     }
 
     .cert-header {
-      @include header-lg($dark, $writing);
+      @include header-lg($dark, $typewriter);
       // margin-top: 4%;
       margin-bottom: 2%;
     }

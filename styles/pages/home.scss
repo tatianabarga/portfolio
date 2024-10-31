@@ -92,3 +92,14 @@
     @include hover($dark, $white);
   }
 }
+
+.exp-sec {
+  padding-bottom: 5%;
+}
+
+.ed-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
