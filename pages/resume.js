@@ -52,7 +52,7 @@ export default function Resume() {
             <Education fromPage="resume" />
           </div>
         </div>
-        <div className="exp-sec">
+        <div className="exp-sec-res">
           <Experience fromPage="resume" />
         </div>
         <div className="cert-sec">
