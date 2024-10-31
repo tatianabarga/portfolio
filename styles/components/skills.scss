@@ -81,7 +81,7 @@
       // text-align: center;
       
       &--soft {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white-ew, $typewriter);
       }
 
       &--tech {
