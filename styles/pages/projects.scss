@@ -15,7 +15,8 @@
 
 .bg-img-cont-proj {
   width: 100%;
-  // height: 100%;
+  padding-bottom: 10%;
+  // height: 80%;
   z-index: 1;
   position: absolute;
   margin: 5%;
@@ -23,11 +24,17 @@
 
 .cloud-img {
   padding: 3%;
+  // height: 80%;
+  // padding-bottom: 10%;
 }
 
 .proj-pg-cont {
   z-index: 2;
   margin: 5%;
+}
+
+.project-item {
+  background-color: $white-st;
 }
 
 .sec-header {

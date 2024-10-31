@@ -11,10 +11,18 @@ export default function aboutme() {
         <img src="/portrait.png" className="portrait-img-am" alt="" />
       </div>
       <div className="aboutme-header">
-        <h2 className="aboutme-header-txt"> Hey! I&apos;m Tati.. </h2>
+        <h2 className="aboutme-header-txt">
+          {'<h2 className="pizazz">'}<br />
+          &nbsp;&nbsp;Hi,<br />
+          {'</h2>'}
+        </h2>
+
       </div>
       <div className="aboutme-comp">
         <Aboutme />
+      </div>
+      <div className="aboutme-bio">
+        Check out my code on GitHub, my art on Instagram, or my Linked In:
       </div>
       <div className="socials-comp">
         <Socials fromPage="aboutme" />

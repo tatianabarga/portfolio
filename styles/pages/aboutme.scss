@@ -1,14 +1,13 @@
 @import '../variables.scss';
 
 .aboutme-header {
-  @include bg-boi-xl($dark, $writing);
-  font-size: 6vw;
+  @include header-lg($dark, $typewriter);
   display: flex;
   flex-direction: row;
   align-items: start;
   margin-bottom: 5%;
   margin-top: 6%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 .bg-img-cont-am {
