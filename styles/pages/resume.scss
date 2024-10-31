@@ -84,6 +84,10 @@
   * {
     @include margins(2%, 1%);
   }
+  
+  &:hover {
+    @include hover($dark, $white);
+  }
 }
 
 .exp-sec {

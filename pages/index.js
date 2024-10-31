@@ -55,7 +55,7 @@ function Home() {
           <div className="cert-comp">
             <Certifications fromPage="home" />
           </div>
-          <div className="resume-btn">
+          <div className="resume-btn-home">
             <a
               href={resume}
               target="_blank"
