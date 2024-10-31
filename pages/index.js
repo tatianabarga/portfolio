@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="header-sparkles">
         <div className="page-header-home">
-          <h2>Tatiana Barga</h2>
+          <h2>Hey! I&apos;m Tati..</h2>
         </div>
         {/* <div className="sparkles-comp">
           <Sparkles />
@@ -51,19 +51,11 @@ function Home() {
         <div className="proj-comp-cont">
           <Projects />
         </div>
-        <div className="exp-sec">
-          <Experience fromPage="resume" />
-        </div>
-        <div className="ed-sec">
-          <div className="ed-comp">
-            <Education fromPage="resume" />
-          </div>
-        </div>
         <div className="cert-sec">
           <div className="cert-comp">
-            <Certifications fromPage="resume" />
+            <Certifications fromPage="home" />
           </div>
-          <div className="resume-btn">
+          <div className="resume-btn-home">
             <a
               href={resume}
               target="_blank"
@@ -74,6 +66,14 @@ function Home() {
               </button>
             </a>
           </div>
+        </div>
+        <div className="ed-sec">
+          <div className="ed-comp">
+            <Education fromPage="resume" />
+          </div>
+        </div>
+        <div className="exp-sec">
+          <Experience fromPage="resume" />
         </div>
       </div>
     </div>

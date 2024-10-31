@@ -23,7 +23,51 @@
   // .cert-item {
   //   margin: 4%;
   // }
+  &--home {
+    @extend .cert;
+    @include rounded;
+    
 
+    .cert-cont {
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 1%;
+      @include rounded;
+    }
+
+    .cert-header {
+      @include header-lg($dark, $typewriter);
+      // margin-top: 4%;
+      margin-bottom: 2%;
+    }
+
+    .ci-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .cert-item {
+      @include pill-sq($dark);
+      margin: 4%;    
+      
+      &:hover {
+        @include hover($pink, $white);
+      }
+    }
+
+
+    .cert-txt {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      @include text-norm-bold($white, $typewriter);
+    }
+  }
 
   &--resume {
     @extend .cert;
@@ -53,9 +97,9 @@
     }
 
     .cert-item {
-      @include pill-sq($blue);
+      @include pill-sq($dark);
       margin: 4%;    
-      
+
       &:hover {
         @include hover($pink, $white);
       }

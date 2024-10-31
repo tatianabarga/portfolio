@@ -1,14 +1,13 @@
 @import '../variables.scss';
 
 .aboutme-header {
-  @include bg-boi-xl($dark, $writing);
-  font-size: 6vw;
+  @include header-lg($dark, $typewriter);
   display: flex;
   flex-direction: row;
   align-items: start;
   margin-bottom: 5%;
   margin-top: 6%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 .bg-img-cont-am {
@@ -28,12 +27,12 @@
 }
 
 .aboutme-title {
-  @include subHeader-bold($pink-dark, $typewriter);
+  @include subHeader-bold($blue, $typewriter);
   @include margins(8%, 2%)
 }
 
 .aboutme-bio {
-  @include subHeader-bold($pink-dark, $typewriter);
+  @include subHeader-bold($blue, $typewriter);
   @include rounded();
   margin-right: 30%;
   margin-left: 5%;

@@ -4,14 +4,14 @@
   &--resume {
     // @extend .ed;
 
-    background-color: $blue;
+    // background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include rounded;
 
     .main-header {
-      @include header-lg($pink, $writing);
+      @include header-lg($pop, $typewriter);
       margin-top: 2%;
     }
 
@@ -49,7 +49,7 @@
     }
 
     .desc {
-      @include text-norm($pink, $typewriter);
+      @include text-norm($pop, $typewriter);
       margin-right: 6%;
       display: flex;
       justify-content: end;
@@ -59,7 +59,7 @@
       @include text-smaller($pink, $norm);
       font-style: italic;
     }
-}
+  }
 
 
 }

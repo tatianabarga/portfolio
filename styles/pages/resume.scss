@@ -61,7 +61,7 @@
   margin-left: 2%;
 }
 
-.ed-sec {
+.ed-sec-res {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -71,11 +71,11 @@
 
 .resume-btn {
   margin-top: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   height: 30%; 
-  width: 50;
-  @include btn-gen($pink, $white, $writing);
+  // width: 50%;
+  @include btn-gen($pink, $white-ew, $writing);
   font-size: 1.5vw;
   display: flex;
   flex-direction: row;
@@ -83,6 +83,10 @@
   
   * {
     @include margins(2%, 1%);
+  }
+  
+  &:hover {
+    @include hover($dark, $white);
   }
 }
 
@@ -92,6 +96,7 @@
 
 .ed-comp {
   grid-column: span 2;
+  padding-bottom: 3%;
 }
 
 .cert-sec {

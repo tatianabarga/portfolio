@@ -18,7 +18,7 @@
     // height: 50%;
 
     .subheader {
-      @include header-lg($dark, $writing);
+      @include header-lg($dark, $typewriter);
       margin-left: 10%;
     }
 
@@ -81,7 +81,7 @@
       // text-align: center;
       
       &--soft {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white-ew, $typewriter);
       }
 
       &--tech {
