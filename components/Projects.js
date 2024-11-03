@@ -2,17 +2,20 @@ import React, { useEffect, useState } from 'react';
 import getAllProjects from '../utils/data/projectsData';
 
 export default function Projects() {
-  const [projects, setProjects] = useState({});
+  // const [projects, setProjects] = useState({});
   const [projectsArray, setProjectsArray] = useState([]);
 
   useEffect(() => {
-    getAllProjects().then(setProjects);
+    getAllProjects().then((projects) => {
+      const sortedProjects = Object.values(projects).sort((a, b) => a.orderNum - b.orderNum);
+      setProjectsArray(sortedProjects);
+    });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    setProjectsArray(Object.values(projects));
-  }, [projects]);
+  // useEffect(() => {
+  //   setProjectsArray(Object.values(projects));
+  // }, [projects]);
 
   return (
     <div className="project-sec">

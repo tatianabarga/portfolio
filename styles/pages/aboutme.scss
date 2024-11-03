@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 .aboutme-header {
-  @include header-lg($dark, $typewriter);
+  @include secHeader-sm($dark, $typewriter);
   display: flex;
   flex-direction: row;
   align-items: start;
