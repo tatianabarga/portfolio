@@ -5,21 +5,22 @@ import getAllExperience from '../utils/data/experienceData';
 import { getJobSkills } from '../utils/data/skillsData';
 
 export default function Experience({ fromPage }) {
-  const [experiences, setExperiences] = useState({});
   const [jobSkills, setJobSkills] = useState({});
   const [exArray, setExArray] = useState([]);
   const [jsArray, setJsArray] = useState([]);
 
   useEffect(() => {
-    getAllExperience().then(setExperiences);
+    getAllExperience().then((exps) => {
+      const sortedExps = Object.values(exps).sort((a, b) => a.orderNum - b.orderNum);
+      setExArray(sortedExps);
+    });
     getJobSkills().then(setJobSkills);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    setExArray(Object.values(experiences));
     setJsArray(Object.values(jobSkills));
-  }, [experiences, jobSkills]);
+  }, [jobSkills]);
 
   return (
     <div className={fromPage === 'resume' ? 'exp exp--resume' : 'exp exp--home'}>
