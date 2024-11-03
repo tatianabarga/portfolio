@@ -4,20 +4,25 @@ import { getSoftSkills, getTechSkills } from '../utils/data/skillsData';
 
 export default function Skills({ fromPage }) {
   const [softSkills, setSoftSkills] = useState({});
-  const [techSkills, setTechSkills] = useState({});
   const [softSkillsArr, setSoftSkillsArr] = useState([]);
   const [techSkillsArr, setTechSkillsArr] = useState([]);
 
   useEffect(() => {
     getSoftSkills().then(setSoftSkills);
-    getTechSkills().then(setTechSkills);
+    getTechSkills().then((skills) => {
+      const sortedByKeys = Object.entries(skills)
+        .sort(([keyA], [keyB]) => keyA.localeCompare(keyB))
+        .map(([, value]) => value);
+      // Sort tech skills in alphabetical order by key in key value pairs. skills that should be displayed first are created with keys begginning with an 'a'.
+
+      setTechSkillsArr(sortedByKeys);
+    });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setSoftSkillsArr(Object.values(softSkills));
-    setTechSkillsArr(Object.values(techSkills));
-  }, [softSkills, techSkills]);
+  }, [softSkills]);
 
   return (
     <div className={fromPage === 'resume' ? 'skills skills--resume' : 'skills skills--home'}>
