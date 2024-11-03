@@ -4,17 +4,15 @@ import Image from 'next/image';
 import getAllEducation from '../utils/data/educationData';
 
 export default function Education({ fromPage }) {
-  const [educations, setEducations] = useState({});
   const [edArray, setEdArray] = useState([]);
 
   useEffect(() => {
-    getAllEducation().then(setEducations);
+    getAllEducation().then((eds) => {
+      const sortedEds = Object.values(eds).sort((a, b) => a.orderNum - b.orderNum);
+      setEdArray(sortedEds);
+    });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    setEdArray(Object.values(educations));
-  }, [educations]);
 
   return (
     <div className={fromPage === 'resume' ? 'ed ed--resume' : 'ed ed--home'}>
