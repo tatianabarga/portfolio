@@ -64,4 +64,6 @@ To learn more about Next.js, take a look at the following resources:
 tech stack
 tailwind
 
+deployed link: https://tatiana-barga.netlify.app/
+
 install tailwind npm install tailwindcss@latest
