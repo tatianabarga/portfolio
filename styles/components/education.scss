@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2%;
+    background-color: $white-st;
     @include rounded;
 
     .main-header {
