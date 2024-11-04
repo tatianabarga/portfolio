@@ -73,7 +73,7 @@
   padding: 2%;
   margin: 2%;
   margin-left: 30%;
-  @include text-norm($white, $typewriter);
+  @include text-norm-bold($white, $typewriter);
   background-color: $dark-drk-st;
   @include rounded-less();
 }

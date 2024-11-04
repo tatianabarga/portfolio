@@ -150,7 +150,7 @@
     }
 
     .date{
-      @include subHeader-bold($pop, $typewriter);
+      @include secHeader($pink-dark, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -168,7 +168,7 @@
       align-items: center;
 
       p {
-        @include text-norm-bold($dark, $typewriter);
+        @include secHeader($dark, $typewriter);
         display: flex;
         justify-content: end;
       }
@@ -183,7 +183,7 @@
     .desc-info {
       margin-right: 6%;
       p {
-        @include text-sm($dark, $typewriter);
+        @include text-norm-bold($dark, $typewriter);
         display: flex;
         justify-content: end;
       }

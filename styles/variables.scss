@@ -53,9 +53,11 @@ $typewriter: Monaco, "Courier New", monospace;
 }
 
 @mixin secHeader ($txtcolor, $font) {
-  font-size: 150%;
+  // font-size: 150%;
+  font-size: 1.5vw;
+  letter-spacing: .05vw;
   color: $txtcolor;
-  font-weight: 500;
+  font-weight: 700;
   font-family: $font;
 }
 
@@ -84,6 +86,7 @@ $typewriter: Monaco, "Courier New", monospace;
 @mixin text-norm-bold ($txtcolor, $font) {
   // font-size: 90%;
   font-size: 1vw;
+  letter-spacing: .05vw;
   color: $txtcolor;
   font-weight: bold;
   font-family: $font;
