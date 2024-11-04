@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2%;
+    background-color: $white-st;
     @include rounded;
 
     .main-header {
@@ -49,7 +51,7 @@
     }
 
     .desc {
-      @include text-norm($pop, $typewriter);
+      @include text-norm-bold($pink-dark, $typewriter);
       margin-right: 6%;
       display: flex;
       justify-content: end;

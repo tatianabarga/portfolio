@@ -9,6 +9,7 @@ $pop: #cd6a6e;
 $blue: #7b6c78;
 $dark: #4f474e;
 $dark-drk: #413a49;
+$dark-drk-st: rgba(65, 58, 73, 0.75);
 
 // $white: #e2cfcb;
 // $white-ew: #e9dcd9;
@@ -23,7 +24,8 @@ $dark-drk: #413a49;
 //text
 $norm: Verdana, Geneva, sans-serif;
 $writing: "Segoe Script", cursive;
-$typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
+// $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
+$typewriter: Monaco, "Courier New", monospace;
 // $brush: 'French Script MT', cursive;
 
 @mixin bg-boi-xl ($txtcolor, $font) {
@@ -46,13 +48,16 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   font-size: 2.5vw;
   color: $txtcolor;
   font-weight: 700;
+  letter-spacing: .05vw;
   font-family: $font;
 }
 
 @mixin secHeader ($txtcolor, $font) {
-  font-size: 150%;
+  // font-size: 150%;
+  font-size: 1.5vw;
+  letter-spacing: .05vw;
   color: $txtcolor;
-  font-weight: 500;
+  font-weight: 700;
   font-family: $font;
 }
 
@@ -75,11 +80,13 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 @mixin subHeader-bold ($txtcolor, $font) {
   @include subHeader($txtcolor, $font);
   font-weight: bold;
+  letter-spacing: .05vw;
 }
 
 @mixin text-norm-bold ($txtcolor, $font) {
   // font-size: 90%;
   font-size: 1vw;
+  letter-spacing: .05vw;
   color: $txtcolor;
   font-weight: bold;
   font-family: $font;
