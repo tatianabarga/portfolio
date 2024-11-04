@@ -18,14 +18,11 @@ export default function Projects() {
   // }, [projects]);
 
   return (
-    <div className="project-sec proj proj--home carousel">
+    <div className="project-sec proj proj--proj-page">
       {projectsArray.map((thisProject) => (
         <div className="project-item">
           <p className="proj-name">{thisProject.name}</p>
           <div className="links-ts-sec">
-            <div className="proj-ts">
-              <p className="proj-ts-txt">{thisProject.techStack}</p>
-            </div>
             <div className="proj-links">
               {thisProject.deployedProject
                 ? (
@@ -75,6 +72,9 @@ export default function Projects() {
                     </a>
                   </div>
                 ) : null}
+            </div>
+            <div className="proj-ts">
+              <p className="proj-ts-txt">{thisProject.techStack}</p>
             </div>
           </div>
           <div className="proj-sk">

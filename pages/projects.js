@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from '../components/Projects';
+import ProjectsProjPage from '../components/ProjectsProjPage';
 
 export default function projects() {
   return (
@@ -13,7 +13,7 @@ export default function projects() {
           <p className="sec-header-txt">Projects</p>
         </div>
         <div className="project-comp">
-          <Projects />
+          <ProjectsProjPage />
         </div>
       </div>
     </div>
