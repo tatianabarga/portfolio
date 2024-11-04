@@ -109,7 +109,7 @@
 }
 
 .proj-desc {
-  @include text-norm($dark, $typewriter);
+  @include text-norm-bold($dark, $typewriter);
   margin-right: 6%;
   margin-bottom: 2%;
   z-index: 2;
