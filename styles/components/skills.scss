@@ -35,9 +35,7 @@
     }
     
     .skill--tech{
-        @include pill($pink);
-        @include padding(2.5%, 1%);
-        @include rounded-more();
+        @include pill-lg($pink);
     }
 
     .skill-txt {
