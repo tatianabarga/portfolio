@@ -18,7 +18,7 @@
     // height: 50%;
 
     .subheader {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($white, $typewriter);
       margin-left: 10%;
     }
 
@@ -31,31 +31,29 @@
     }
 
     .skill--soft {
-      @include pill-lg($dark);
+      @include pill-lg-hollow($white-lw, $dark-drk);
     }
     
     .skill--tech{
-        @include pill($pink);
-        @include padding(2.5%, 1%);
-        @include rounded-more();
+      @include pill-lg-hollow($pop, $dark-drk);
     }
 
     .skill-txt {
       display: flex;
       
       &--soft {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white-lw, $typewriter);
       }
 
       &--tech {
-        @include text-norm-bold($white-ew, $typewriter);
+        @include text-norm-bold($pop, $typewriter);
       }
     }
   }
 
   &--resume {
     margin-right: 10%;
-    background-color: $pink;
+    // background-color: $lav;
     @include rounded;
     @include padding(4%, 4%);
 
@@ -66,12 +64,18 @@
       justify-content: start;
     }
 
+    .subheader {
+      @include header-lg($white-lw, $typewriter);
+      margin-left: 2%;
+      margin-bottom: 2%;
+    }
+
     .skill--soft {
-      @include pill($dark);
+      @include pill-lg-hollow($white-lw, $dark-drk);
     }
     
     .skill--tech{
-      @include pill($white);
+      @include pill-lg-hollow($pop, $dark-drk);
     }
 
     .skill-txt {
@@ -81,18 +85,12 @@
       // text-align: center;
       
       &--soft {
-        @include text-norm($white-ew, $typewriter);
+        @include text-norm($white-lw, $typewriter);
       }
 
       &--tech {
-        @include text-norm-bold($pink-dark, $typewriter);
+        @include text-norm-bold($pop, $typewriter);
       }
-    }
-
-    .subheader {
-      @include header-lg($dark, $writing);
-      margin-left: 2%;
-      margin-bottom: 2%;
     }
   }
 }

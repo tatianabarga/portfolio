@@ -25,7 +25,7 @@
       }
 
       &:hover {
-        @include hover($dark, $white);
+        @include hover($lav, $white);
       }
     }
   }
@@ -57,7 +57,7 @@
     height: 100%;
 
     .social-item {
-      @include pill($dark);
+      @include pill($pop);
       @include margins(5%, 2%);
       height: 20%;
       @include padding(6%, 1.5%);
@@ -70,7 +70,7 @@
       }
 
       &:hover {
-        @include hover($dark, $white);
+        @include hover($lav, $white);
       }
     }
   }

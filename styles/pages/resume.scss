@@ -6,7 +6,7 @@
 }
 
 .page-header {
-  @include bg-boi($pop, $writing);
+  @include bg-boi($white, $writing);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@
   * {
     * {
       &:hover {
-        @include hover($pink, $white);
+        @include hover($lav, $white);
       }
     }
 
@@ -70,12 +70,12 @@
 }
 
 .resume-btn {
-  margin-top: 40%;
+  margin-bottom: 3%; 
   // margin-left: auto;
   // margin-right: auto;
   height: 30%; 
   // width: 50%;
-  @include btn-gen($pink, $white-ew, $writing);
+  @include btn-gen($lav-drk, $white-ew, $typewriter);
   font-size: 1.5vw;
   display: flex;
   flex-direction: row;
@@ -86,7 +86,8 @@
   }
   
   &:hover {
-    @include hover($dark, $white);
+    @include hover($dark-drk, $white);
+    @include border($white);
   }
 }
 
@@ -116,9 +117,8 @@
     flex-direction: column;
     align-items: start;
     flex-grow: 1;
-
-    background-color: $dark;
     @include rounded;
+    @include border($white-lw);
     @include padding(1%, 1%);
   }
 }

@@ -29,7 +29,7 @@
     
 
     .cert-cont {
-      background-color: $white;
+      // background-color: $white;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -39,7 +39,7 @@
     }
 
     .cert-header {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($white, $typewriter);
       // margin-top: 4%;
       margin-bottom: 2%;
     }
@@ -51,21 +51,20 @@
     }
 
     .cert-item {
-      @include pill-sq($dark);
+      @include pill-sq($pop);
       margin: 4%;    
       
       &:hover {
-        @include hover($pink, $white);
+        @include hover($lav, $white);
       }
     }
-
 
     .cert-txt {
       display: flex;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      @include text-norm-bold($white, $typewriter);
+      @include text-norm-bold($dark-drk, $typewriter);
     }
   }
 
@@ -75,7 +74,7 @@
     
 
     .cert-cont {
-      background-color: $white;
+      background-color: $dark-drk;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -85,7 +84,7 @@
     }
 
     .cert-header {
-      @include header-lg($dark, $writing);
+      @include header-lg($white, $typewriter);
       margin-top: 4%;
       margin-bottom: 2%;
     }
@@ -97,21 +96,22 @@
     }
 
     .cert-item {
-      @include pill-sq($dark);
+      @include pill-sq($pop);
       margin: 4%;    
-
-      &:hover {
-        @include hover($pink, $white);
-      }
-    }
-
-
+      
     .cert-txt {
       display: flex;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      @include text-norm-bold($white, $typewriter);
+      @include text-norm-bold($dark, $typewriter);
     }
+
+      &:hover {
+        @include hover($lav, $white);
+      }
+    }
+
+
   }
 }

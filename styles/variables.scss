@@ -1,22 +1,29 @@
 //colors
 $white: #d5bfc2;
+// $white-lw: #d4bbb6;
+$white-lw: #c0b4ca;
 $white-ew: #e2cfcb;
 $white-st: rgba(213, 191, 194, 0.75);
 $pink: #d58589;
 // $pink-dark: #c7767a;
 $pink-dark: #b6696d;
 $pop: #cd6a6e;
+$lav: #9783a0;
+$lav-l: #c7b2d6;
+$lav-drk: #78687f;
 $blue: #7b6c78;
+$blue-st: rgba(123, 108, 120, 0.75);
 $dark: #4f474e;
 $dark-drk: #413a49;
+$dark-drk-st: rgba(65, 58, 73, 0.75);
 
 // $white: #e2cfcb;
 // $white-ew: #e9dcd9;
 // $white-st: rgba(226, 207, 203, 0.75);
-// $pink: #c498a0;
-// $pink-dark: #b9868f;
+// $lav: #c498a0;
+// $lav-dark: #b9868f;
 // $pop: #ba6558;
-// $blue: #696f80;
+// $lav: #696f80;
 // $yellow: #fad954;
 // $dark: #413a49;
 
@@ -135,21 +142,6 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   padding-right: $sides;
 }
 
-@mixin pill-sq ($bg-color) {
-  border-radius: 1rem;
-  font-weight: 500;
-  margin: 0.5rem;
-  @include padding(4%, 1.5%);
-  display: flex;
-  justify-content: center;
-  background-color: $bg-color;
-  flex-wrap: wrap;
-
-  * {
-    text-align: center
-  }
-}
-
 @mixin pill ($bg-color) {
   border-radius: 1rem;
   font-weight: 500;
@@ -165,8 +157,24 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   }
 }
 
+@mixin pill-sq ($bg-color) {
+  @include pill($bg-color);
+  margin: 0.5rem;
+}
+
+@mixin pill-hollow ($color, $bg-color) {
+  @include pill($bg-color);
+  @include border($color);
+}
+
 @mixin pill-lg ($bg-color) {
   @include pill($bg-color);
+  @include padding(2.5%, 1%);
+  @include rounded-more();
+}
+
+@mixin pill-lg-hollow ($color, $bg-color) {
+  @include pill-hollow($color, $bg-color);
   @include padding(2.5%, 1%);
   @include rounded-more();
 }
@@ -179,6 +187,10 @@ $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
   font-weight: bold;
   border-radius: .5rem;
   @include padding(2%, 1%);
+}
+
+@mixin border ($color) {
+  border: .15vw solid $color;
 }
 
 //animations

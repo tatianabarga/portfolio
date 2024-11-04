@@ -25,14 +25,14 @@
     margin-right: auto;
     display: flex;
     align-self: flex-start;
-    @include bg-boi($pink, $writing);
+    @include bg-boi($white, $writing);
   }
 
   // .btn-div {
   //   display: flex;
   //   width: max-content;
   //   border: 2px, solid;
-  //   border-color: $pink;
+  //   border-color: $lav;
   //   display: inline-flex;
   // }
 
@@ -41,19 +41,20 @@
   div {
     margin-left: 1rem;
     margin-right: 1rem;
-    @include secHeader-sm($pink, $writing);
+    @include secHeader-sm($white, $writing);
     font-weight: bold;
     
     &:hover {
-      @include hover($white, $dark);
+      @include hover($dark-drk, $lav);
     }
   }
 }
 
 .contact {
-  @include btn-gen($pop, $white, $writing);
+  @include btn-gen($lav-drk, $white-ew, $writing);
 
   &:hover {
-    @include hover($dark, $white);
+    @include hover($dark-drk, $white);
+    @include border($white);
   }
 }

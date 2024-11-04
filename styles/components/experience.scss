@@ -3,7 +3,7 @@
 .exp {
   &--home {
 
-    // background-color: $blue;
+    // background-color: $lav;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
     @include rounded;
 
     .exp-header {
-      @include header-lg($pink, $writing);
+      @include header-lg($white, $writing);
     }
 
     .exp-items-cont {
@@ -96,7 +96,7 @@
     }
 
     .exp-skill {
-      @include pill-lg($dark);
+      @include pill-lg-hollow($white, $dark-drk);
     }
     
     .exp-sk-txt {
@@ -108,7 +108,7 @@
 
   &--resume {
 
-    // background-color: $blue;
+    // background-color: $lav;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +117,7 @@
     // border: 1%, solid, $pop;
 
     .exp-header {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($white, $typewriter);
     }
 
     .exp-items-cont {
@@ -135,7 +135,7 @@
     }
 
     .title {
-      @include subHeader($dark, $typewriter);
+      @include subHeader($lav-l, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -150,7 +150,7 @@
     }
 
     .date{
-      @include subHeader-bold($pop, $typewriter);
+      @include subHeader-bold($white, $typewriter);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -168,7 +168,7 @@
       align-items: center;
 
       p {
-        @include text-norm-bold($dark, $typewriter);
+        @include text-norm-bold($lav-l, $typewriter);
         display: flex;
         justify-content: end;
       }
@@ -183,7 +183,7 @@
     .desc-info {
       margin-right: 6%;
       p {
-        @include text-sm($dark, $typewriter);
+        @include text-sm($lav-l, $typewriter);
         display: flex;
         justify-content: end;
       }
@@ -202,13 +202,13 @@
     }
 
     .exp-skill {
-      @include pill-lg($dark);
+      @include pill-lg-hollow($white-lw, $dark-drk);
     }
     
     .exp-sk-txt {
       display: flex;
       text-align: center;
-      @include text-norm($white, $typewriter);
+      @include text-norm($white-lw, $typewriter);
     }
   }
 }

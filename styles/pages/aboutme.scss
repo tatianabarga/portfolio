@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 .aboutme-header {
-  @include secHeader-sm($dark, $typewriter);
+  @include secHeader-sm($white-lw, $typewriter);
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -27,16 +27,16 @@
 }
 
 .aboutme-title {
-  @include subHeader-bold($blue, $typewriter);
+  @include subHeader-bold($white-lw, $typewriter);
   @include margins(8%, 2%)
 }
 
 .aboutme-bio {
-  @include subHeader-bold($blue, $typewriter);
+  @include subHeader-bold($white-lw, $typewriter);
   @include rounded();
   margin-right: 30%;
   margin-left: 5%;
-  background-color: $white-st;
+  background-color: $dark-drk-st;
   z-index: 2;
   @include padding(3%, 2%);
 }

@@ -79,6 +79,6 @@
 
 .li-item {
   &:hover {
-    @include hover($pink, $dark);
+    @include hover($lav, $dark);
   }
 }
