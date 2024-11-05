@@ -36,7 +36,7 @@ export default function Resume() {
               rel="noopener noreferrer"
             >
               <button type="button" className="res-btn-txt">
-                View Official Resume
+                Printable Resume
               </button>
             </a>
           </div>
