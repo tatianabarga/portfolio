@@ -38,10 +38,38 @@
   margin: 2%;
 }
 
+.resume-btn {
+  margin-bottom: 80%;
+  margin-top: 0%;
+  margin-left: 7%;
+  // margin-right: auto;
+  height: 20%; 
+  width: 70%;
+  @include btn-gen($pink, $white-ew, $typewriter);
+  // @include padding();
+  font-size: 1.5vw;
+  letter-spacing: .15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: span 12;
+  
+  * {
+    @include margins(2%, 1%);
+    font-size: 1.2vw;
+  }
+  
+  &:hover {
+    @include hover($dark, $white);
+  }
+}
+
 .socials-comp {
-  grid-column: span 23;
-  margin-left: 55%;
+  grid-column: span 11;
+  // margin-left: 10%;
   align-self: flex-start;
+  justify-content: center;
   height: 50%;
 
   * {
@@ -76,28 +104,6 @@
   @include text-norm-bold($white, $typewriter);
   background-color: $dark-drk-st;
   @include rounded-less();
-}
-
-.resume-btn {
-  // margin-top: 40%;
-  // margin-left: auto;
-  // margin-right: auto;
-  height: 30%; 
-  // width: 50%;
-  @include btn-gen($pink, $white-ew, $typewriter);
-  font-size: 1.5vw;
-  letter-spacing: .15vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-  * {
-    @include margins(2%, 1%);
-  }
-  
-  &:hover {
-    @include hover($dark, $white);
-  }
 }
 
 .exp-sec {
