@@ -24,9 +24,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 
-  // margin: 0; /* Remove default margins */
-  // padding: 0; /* Remove default padding */
   height: 100vh;
+  background: none;
+  position: relative;
 }
 
 a {
@@ -38,9 +38,8 @@ a {
   box-sizing: border-box;
 }
 
-body {
-  // background-image: url(../utils/images/bgImgExtend-shorter.png);
-  // background-repeat: no-repeat;
-  // background-size: 100%;
-  background: none;
+.noauth-content-cont {
+  background-color: $white;
+  margin-top: 3%;
+  padding-top: 8.5%;
 }

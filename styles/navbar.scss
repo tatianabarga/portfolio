@@ -2,6 +2,10 @@
 
 .nav-container {
   height: 2%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .navbar {
@@ -10,8 +14,18 @@
   // align-items: s;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-left: auto;
+  margin-top: 5%;
+  // margin-left: auto;
   margin-right: auto;
+  background-color: $white;
+  @include rounded-more();
+  margin-left: 12.5%;
+
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 75%;
+  z-index: 1000;
 
   .first-teir {
     display: flex;
