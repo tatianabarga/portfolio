@@ -27,7 +27,6 @@ body {
   height: 100vh;
   background: none;
   position: relative;
-  min-height: 100vh
 }
 
 a {
@@ -41,6 +40,6 @@ a {
 
 .noauth-content-cont {
   background-color: $white;
-  margin-top: 3%;
+  // margin-top: 3%;
   padding-top: 8.5%;
 }

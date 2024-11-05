@@ -29,17 +29,6 @@ export default function Resume() {
 
       <div className="resume-components">
         <div className="skills-sec">
-          <div className="socials-comp">
-            <Socials fromPage="resume" />
-          </div>
-          <div className="skills-comp">
-            <Skills fromPage="resume" />
-          </div>
-        </div>
-        <div className="quote">
-          <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
-        </div>
-        <div className="ed-sec">
           <div className="resume-btn">
             <a
               href={resume}
@@ -51,6 +40,17 @@ export default function Resume() {
               </button>
             </a>
           </div>
+          <div className="socials-comp">
+            <Socials fromPage="resume" />
+          </div>
+          <div className="skills-comp">
+            <Skills fromPage="resume" />
+          </div>
+        </div>
+        <div className="quote">
+          <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
+        </div>
+        <div className="ed-sec">
           <div className="ed-comp">
             <Education fromPage="resume" />
           </div>
