@@ -30,7 +30,8 @@
   .first-teir {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
     // margin-top: 2%; //causes gap
     // flex: 1;
@@ -39,10 +40,10 @@
     .nav-tabs {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-self: flex-end;
       width: 100%;
-      align-items: center; 
+      align-items: flex-end; 
       padding-bottom: 2%;
       border-bottom: none;
     }
