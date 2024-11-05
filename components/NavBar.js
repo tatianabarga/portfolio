@@ -17,17 +17,17 @@ export default function NavBar() {
             </Link>
           </div>
           <div className="nav-tabs">
-            <div>
+            <div className="coll-item">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </div>
-            <div>
+            <div className="coll-item">
               <Link href="/aboutme">
                 <a>About Me</a>
               </Link>
             </div>
-            <div>
+            <div className="coll-item">
               <Link href="/projects">
                 <a>Projects</a>
               </Link>

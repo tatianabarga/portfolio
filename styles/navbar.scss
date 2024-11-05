@@ -47,6 +47,13 @@
       border-bottom: none;
     }
 
+    @media (max-width: 1282px) {
+      .coll-item {
+          display: none;
+      }
+    }
+  
+
     div {
       margin-left: 1rem;
       margin-right: 1rem;
