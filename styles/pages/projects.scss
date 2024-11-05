@@ -130,24 +130,27 @@
   &--home {
 
     .carousel {
-      display: flex;
-      // width: 300vw;
-      width: fit-content;
-      height: 100%;
+      display: flex !important;
+      // width: 300%;
+      width: 100vw;
+      // width: fit-content;
+      // height: 100%;
       transition: transform 1s ease;
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
+      overflow-x: auto
     }
 
     .project-item {
       background-color: $white-st;
-      // @include rounded-less();
-      width: 50%;
+      @include rounded-less();
+      // width: 50%;
       // @include margins(3%, 1%);
-      // flex: 1;
-      // width: 100%;
-      height: 100%;
+      flex: 1;
+      // width: 50vw;
+      flex: 0 0 100vw;
+      // height: 100%;
     }
 
     .sec-header {

@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function NavBar() {
   return (
     <header className="nav-container">
       <nav className="navbar" aria-label="Global"> {/* add a logo of my name on left */}
         <div className="logo">
-          <span className="sparkle-nav">
+          {/* <span className="sparkle-nav">
             <Image src="/../public/sparklePink.png" width="50%" height="70%" />
-          </span>
+          </span> */}
           <Link href="/">
             <a>Tatiana</a>
           </Link>
