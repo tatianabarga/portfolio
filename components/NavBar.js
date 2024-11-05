@@ -7,39 +7,41 @@ export default function NavBar() {
   return (
     <header className="nav-container">
       <nav className="navbar" aria-label="Global"> {/* add a logo of my name on left */}
-        <div className="logo">
-          {/* <span className="sparkle-nav">
-            <Image src="/../public/sparklePink.png" width="50%" height="70%" />
-          </span> */}
-          <Link href="/">
-            <a>Tatiana</a>
-          </Link>
+        <div className="first-teir">
+          <div className="logo">
+            {/* <span className="sparkle-nav">
+              <Image src="/../public/sparklePink.png" width="50%" height="70%" />
+            </span> */}
+            <Link href="/">
+              <a>Tatiana</a>
+            </Link>
+          </div>
+          <div className="nav-tabs">
+            <div>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/aboutme">
+                <a>About Me</a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/projects">
+                <a>Projects</a>
+              </Link>
+            </div>
+            <Link className="btn-div" href="/resume" passHref>
+              <button type="button" className="res-btn-nav">
+                <a>Resume</a>
+              </button>
+            </Link>
+          </div>
         </div>
-        <div>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
+        <div className="email-nav">
+          <p className="email-nav-txt">tatigbarga@gmail.com</p>
         </div>
-        <div>
-          <Link href="/aboutme">
-            <a>About Me</a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/resume">
-            <a>Resume</a>
-          </Link>
-        </div>
-        <Link className="btn-div" href="/contact" passHref>
-          <button type="button" className="contact">
-            <a>Get in touch</a>
-          </button>
-        </Link>
       </nav>
     </header>
 
