@@ -80,10 +80,7 @@
         @include hover($pink, $white);
       }
     }
-
   }
-  
-
 }
 
 .skills-comp {
@@ -102,10 +99,14 @@
 .quote {
   padding: 2%;
   margin: 2%;
-  margin-left: 30%;
+  // margin-left: 30%;
   @include text-norm-bold($white, $typewriter);
   background-color: $dark-drk-st;
   @include rounded-less();
+}
+
+.res-q {
+  margin-left: 30%;
 }
 
 .exp-sec {

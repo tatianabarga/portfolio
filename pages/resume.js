@@ -47,7 +47,7 @@ export default function Resume() {
             <Skills fromPage="resume" />
           </div>
         </div>
-        <div className="quote">
+        <div className="quote res-q">
           <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
         </div>
         <div className="ed-sec">
