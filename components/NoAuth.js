@@ -7,11 +7,7 @@ function NoAuth({ component: Component, pageProps }) {
   return (
     <>
       <div
-        // className="w-75 mx-auto p-3 mb-4 mt-4 rounded-lg"
         className="noauth-content-cont"
-        style={{
-          backgroundColor: '#d5bfc2',
-        }}
       >
         <NavBar />
         <div className="container">

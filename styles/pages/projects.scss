@@ -31,89 +31,207 @@
 .proj-pg-cont {
   z-index: 2;
   margin: 5%;
+  margin-top: 0%;
 }
 
-.project-item {
-  background-color: $white-st;
+.sec-header-txt {
+  @include header-lg($pop, $typewriter);
+  font-size: 2.8vw;
+  margin-left: 30%;
 }
 
-.sec-header {
-  @include bg-boi($dark, $writing);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
-  margin-bottom: 1%;
-}
+.proj {
 
-.proj-name {
-  @include header-lg($dark, $typewriter);
-  font-weight: 500;
-  margin-left: 1%;
-  z-index: 2;
-}
+  &--proj-page {
 
-.links-ts-sec {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.proj-links {
-  grid-column: span 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  flex-wrap: wrap;
-
-  .proj-link-item {
-    @include pill($pop);
-    @include text-norm-bold($dark, $typewriter);
-    margin-bottom: 2%;
-    letter-spacing: 0.15vw;
-
-    &:hover {
-      @include hover($dark, $white);
+    .project-item {
+      background-color: $white-st;
+    }
+    
+    .sec-header {
+      @include bg-boi($dark, $writing);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+      margin-bottom: 1%;
+    }
+    
+    .proj-name {
+      @include header-lg($dark, $typewriter);
+      font-weight: 500;
+      margin-left: 1%;
+      z-index: 2;
+    }
+    
+    .links-ts-sec {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .proj-links {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      flex-wrap: wrap;
+    
+      .proj-link-item {
+        @include pill($pop);
+        @include text-norm-bold($dark, $typewriter);
+        margin-bottom: 2%;
+        letter-spacing: 0.15vw;
+    
+        &:hover {
+          @include hover($dark, $white);
+        }
+      }
+    
+    }
+    
+    .proj-ts {
+      grid-column: span 2;
+      @include text-norm-bold($dark, $typewriter);
+      font-size: 1.08vw;
+      margin-right: 6%;
+      margin-bottom: 2%;
+      display: flex;
+      justify-content: end;
+      z-index: 2;
+    }
+    
+    .proj-sk {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      width: 75%;
+    
+      * {
+        @include text-norm($white, $typewriter);
+        @include pill($dark);
+        @include rounded-more();
+        @include padding(2%, .5%);
+        font-size: 1vw;
+        margin-right: 2%;
+      }
+      z-index: 2;
+    }
+    
+    .proj-desc {
+      @include text-norm-bold($dark, $typewriter);
+      margin-right: 6%;
+      margin-bottom: 2%;
+      z-index: 2;
     }
   }
 
-}
+  &--home {
 
-.proj-ts {
-  grid-column: span 2;
-  @include text-norm-bold($dark, $typewriter);
-  font-size: 1.08vw;
-  margin-right: 6%;
-  margin-bottom: 2%;
-  display: flex;
-  justify-content: end;
-  z-index: 2;
-}
+    .carousel {
+      display: flex !important;
+      // width: 300%;
+      width: 100vw;
+      // width: fit-content;
+      // height: 100%;
+      transition: transform 1s ease;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      overflow-x: auto
+    }
 
-.proj-sk {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
-  width: 75%;
+    .project-item {
+      background-color: $white-st;
+      @include rounded-less();
+      // width: 50%;
+      // @include margins(3%, 1%);
+      flex: 1;
+      // width: 50vw;
+      flex: 0 0 100vw;
+      // height: 100%;
+    }
 
-  * {
-    @include text-norm($white, $typewriter);
-    @include pill($dark);
-    @include rounded-more();
-    @include padding(2%, .5%);
-    font-size: 1vw;
-    margin-right: 2%;
+    .sec-header {
+      @include bg-boi($dark, $writing);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+      margin-bottom: 1%;
+    }
+
+    .proj-name {
+      @include header-lg($dark, $typewriter);
+      font-weight: 500;
+      margin-left: 1%;
+      z-index: 2;
+    }
+
+    // .links-ts-sec {
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+    // }
+
+    .proj-links {
+      // grid-column: span 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      flex-wrap: wrap;
+
+      .proj-link-item {
+        @include pill($pop);
+        @include padding(2%, 1%);
+        @include text-norm-bold($dark, $typewriter);
+        margin-bottom: 2%;
+        letter-spacing: 0.15vw;
+
+        &:hover {
+          @include hover($dark, $white);
+        }
+      }
+
+    }
+
+    .proj-ts {
+      // grid-column: span 2;
+      @include text-norm-bold($dark, $typewriter);
+      font-size: 1.08vw;
+      margin-right: 6%;
+      margin-bottom: 2%;
+      display: flex;
+      justify-content: start;
+      z-index: 2;
+    }
+
+    .proj-sk {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      width: 75%;
+
+      * {
+        @include text-norm($white, $typewriter);
+        @include pill($dark);
+        @include rounded-more();
+        @include padding(2%, .5%);
+        font-size: 1vw;
+        margin-right: 2%;
+      }
+      z-index: 2;
+    }
+
+    .proj-desc {
+      @include text-norm-bold($dark, $typewriter);
+      margin-right: 6%;
+      margin-bottom: 2%;
+      z-index: 2;
+    }
   }
-  z-index: 2;
 }
-
-.proj-desc {
-  @include text-norm-bold($dark, $typewriter);
-  margin-right: 6%;
-  margin-bottom: 2%;
-  z-index: 2;
-}
-
 
 

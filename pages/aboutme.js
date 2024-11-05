@@ -12,8 +12,8 @@ export default function aboutme() {
       </div>
       <div className="aboutme-header">
         <h2 className="aboutme-header-txt">
-          {'<h2 className="pizazz">'}<br />
-          &nbsp;&nbsp;Hi,<br />
+          {'<h2>'}
+          &nbsp;Hi,
           {'</h2>'}
         </h2>
 
