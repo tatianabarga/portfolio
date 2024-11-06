@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function NavBar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -48,9 +49,10 @@ export default function NavBar() {
               </Link>
             </div>
             <div className={collapsed ? 'burger burger--shown' : 'burger burger--hidden'} onClick={toggleCollapse}>
-              <span className="b-icon">
+              {/* <span className="b-icon">
                 <Image src="/../public/Burger.png" width="20%" height="20%" />
-              </span>
+              </span> */}
+              <img src="/Burger.png" className="burger-icon" alt="" width="5%" height="5%" />
             </div>
             <Link className="btn-div" href="/resume" passHref>
               <button type="button" className="res-btn-nav">
