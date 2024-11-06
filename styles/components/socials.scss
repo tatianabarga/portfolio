@@ -7,7 +7,6 @@
     align-items: start;
     justify-content: space-between;
     height: 100%;
-    // width: 100%;
 
     .social-item {
       @include pill($pop);
@@ -84,10 +83,3 @@
     }
   }
 }
-
-// .social-item {
-  
-//   &:hover {
-//     @include hover($dark, $white);
-//   }
-// }
