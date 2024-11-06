@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
+// import Image from 'next/image';
 import getAllEducation from '../utils/data/educationData';
 
 export default function Education({ fromPage }) {
@@ -21,9 +21,9 @@ export default function Education({ fromPage }) {
         {edArray.map((education) => (
           <div className="ed-item">
             <div className="title">
-              <span className="sparkle">
+              {/* <span className="sparkle">
                 <Image src="/../public/sparkleDark.png" width="100%" height="100%" />
-              </span>
+              </span> */}
               <p className="school">
                 {education.school}
               </p>

@@ -8,6 +8,7 @@
     margin-top: 2%;
     background-color: $white-st;
     @include rounded;
+    margin-left: 5%;
 
     .main-header {
       @include header-lg($pop, $typewriter);
