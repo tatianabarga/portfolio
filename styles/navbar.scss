@@ -90,6 +90,11 @@
   }
 
   .burger {
+
+    // align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1%;
+
     &--hidden {
       display: none;
     }
@@ -97,6 +102,10 @@
     &--shown{
       display:flex;
     }
+  }
+
+  .burger-icon {
+
   }
 
 
