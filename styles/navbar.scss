@@ -30,7 +30,8 @@
   .first-teir {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
     // margin-top: 2%; //causes gap
     // flex: 1;
@@ -39,13 +40,24 @@
     .nav-tabs {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-self: flex-end;
       width: 100%;
-      align-items: center; 
+      align-items: flex-end; 
       padding-bottom: 2%;
       border-bottom: none;
     }
+
+    .coll-item {
+      display: none;
+    }
+
+    // @media (max-width: 1282px) {
+    //   .coll-item {
+    //       display: none;
+    //   }
+    // }
+  
 
     div {
       margin-left: 1rem;
@@ -59,7 +71,7 @@
     }
   
     .logo {
-      margin-right: 15%;
+      // margin-right: 15%;
       display: flex;
       align-self: flex-start;
       @include bg-boi($pink, $writing);
@@ -67,9 +79,30 @@
     }
   }
 
-  // .sparkle-nav {
-  //   width: 22%;
-  //   height: 22%;
+  .x {
+    &--hidden {
+      display: none;
+    }
+
+    &--shown{
+      display:flex;
+    }
+  }
+
+  .burger {
+    &--hidden {
+      display: none;
+    }
+
+    &--shown{
+      display:flex;
+    }
+  }
+
+
+  // .x-icon {
+  //   width: 10%;
+  //   height: 10%;
   //   // padding: 2%;
   //   // margin-right: 5%;
   // }

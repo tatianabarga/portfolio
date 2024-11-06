@@ -46,16 +46,19 @@
 }
 
 .cont-comp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   margin: 2%;
-  margin-left: 8%;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .cont-comp-am {
+  margin-left: 8%;
+  grid-column: span 1;
   margin-bottom: 5%;
   background-color: $dark;
   @include rounded();
@@ -64,4 +67,10 @@
   padding-left: 2%;
   padding-bottom: 1%;
   padding-top: 1%;
+}
+
+.ab-q {
+  grid-column: span 3;
+  margin-right: 5%;
+  width: 55%;
 }

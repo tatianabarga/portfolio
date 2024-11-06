@@ -31,6 +31,9 @@ export default function aboutme() {
         <div className="cont-comp-am cont-comp">
           <ContactInfo fromPage="aboutme" />
         </div>
+        <div className="quote ab-q">
+          <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
+        </div>
       </div>
     </div>
   );

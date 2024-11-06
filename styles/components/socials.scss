@@ -45,6 +45,12 @@
       &:hover {
         @include hover($dark, $white);
       }
+
+      * {
+        &:hover {
+          @include hover($dark, $white);
+        }
+      }
     }
   }
 
@@ -67,18 +73,21 @@
         font-size: 1.35vw;
         letter-spacing: 0.15vw;
         margin-top: 1%;
+        &:hover {
+          @include hover($pop, $dark-drk);
+        }
       }
 
       &:hover {
-        @include hover($dark, $white);
+        @include hover($pop, $dark-drk);
       }
     }
   }
 }
 
-.social-item {
+// .social-item {
   
-  &:hover {
-    @include hover($dark, $white);
-  }
-}
+//   &:hover {
+//     @include hover($dark, $white);
+//   }
+// }
