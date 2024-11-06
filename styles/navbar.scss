@@ -48,11 +48,15 @@
       border-bottom: none;
     }
 
-    @media (max-width: 1282px) {
-      .coll-item {
-          display: none;
-      }
+    .coll-item {
+      display: none;
     }
+
+    // @media (max-width: 1282px) {
+    //   .coll-item {
+    //       display: none;
+    //   }
+    // }
   
 
     div {
@@ -67,7 +71,7 @@
     }
   
     .logo {
-      margin-right: 15%;
+      // margin-right: 15%;
       display: flex;
       align-self: flex-start;
       @include bg-boi($pink, $writing);
@@ -75,9 +79,30 @@
     }
   }
 
-  // .sparkle-nav {
-  //   width: 22%;
-  //   height: 22%;
+  .x {
+    &--hidden {
+      display: none;
+    }
+
+    &--shown{
+      display:flex;
+    }
+  }
+
+  .burger {
+    &--hidden {
+      display: none;
+    }
+
+    &--shown{
+      display:flex;
+    }
+  }
+
+
+  // .x-icon {
+  //   width: 10%;
+  //   height: 10%;
   //   // padding: 2%;
   //   // margin-right: 5%;
   // }
