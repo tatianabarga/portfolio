@@ -3,6 +3,8 @@
 // import Image from 'next/image';
 import NoAuth from '../components/NoAuth';
 import '../styles/globals.scss';
+// import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
   return (

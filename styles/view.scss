@@ -2,12 +2,8 @@
 
 .app-cont {
   position: relative;
-  // height: 100vh;
-  // height: min-height;
   background-image: url(../public/Vibrant.jpg);
-  // background-repeat: no-repeat;
   background-size: cover;
-  // background-size: 100%;
   background-position: center;
   background-attachment: fixed;
   @include padding(0%, 4%);
@@ -23,29 +19,24 @@
   margin-left: auto;
   margin-right: auto;
   @include rounded-more;
-  // padding-top: 1%;
   background-color: $white;
   position: relative;
 
   display: flex;
   flex-direction: column;
     overflow: hidden;
-  // overflow: auto;
   height: 100vh;
-  // margin-top: 3%;
-  // padding-top: 8.5%;
 }
 
 .container {
   flex: 1 1 auto;
   overflow-y: auto;
-  margin-top: 10.5%;
+  margin-top: 15%;
   margin-bottom: 2%;
-  // @include margins(0%, 10.5%);
 }
 
 .container::-webkit-scrollbar {
-  width: 2.5vw; /* Width for vertical scrollbar */
+  width: 2.5vw;
 }
 
 /* Track (background of the scrollbar) */
@@ -56,9 +47,9 @@
 
 /* Thumb (the draggable part of the scrollbar) */
 .container::-webkit-scrollbar-thumb {
-  background-color: $pink; /* Color of the scrollbar */
+  background-color: $pink;
   @include rounded();
-  border: .55vw solid $white; /* Adds padding around the thumb */
+  border: .55vw solid $white;
 }
 
 /* Thumb hover effect */

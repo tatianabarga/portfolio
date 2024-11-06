@@ -1,21 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import 'bootstrap/dist/css/bootstrap.css';
-@import './navbar';
-@import './variables';
-@import './view.scss';
-@import './components/education.scss';
-@import './components/skills.scss';
-@import './components/experience.scss';
-@import './components/certifications.scss';
-@import './components/contactInfo.scss';
-@import './components/socials.scss';
-@import './components/sparkles.scss';
-@import './pages/resume.scss';
-@import './pages/aboutme.scss';
-@import './pages/home.scss';
-@import './pages/projects.scss';
+@use './navbar';
+@use './variables';
+@use './view.scss';
+@use './components/education.scss';
+@use './components/skills.scss';
+@use './components/experience.scss';
+@use './components/certifications.scss';
+@use './components/contactInfo.scss';
+@use './components/socials.scss';
+@use './components/sparkles.scss';
+@use './pages/resume.scss';
+@use './pages/aboutme.scss';
+@use './pages/home.scss';
+@use './pages/projects.scss';
 
 html,
 body {
