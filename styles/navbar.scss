@@ -11,21 +11,22 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  // align-items: s;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 4%;
-  // margin-left: auto;
-  margin-right: auto;
+  @include padding(1%, 2%);
+  // padding-left: 2rem;
+  // padding-right: 2rem;
+  // margin-top: 4%;
+  // margin-right: auto;
   background-color: $white;
   @include rounded-more();
-  margin-left: 12.5%;
+  // margin-left: 12.5%;
+  // width: 75%;
+  width: 100%;
 
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 75%;
+  // position: sticky !important;
+  // top: 0;
+  // left: 0;
   z-index: 1000;
+  flex: 0 0 auto;
 
   .first-teir {
     display: flex;
@@ -104,9 +105,9 @@
     }
   }
 
-  .burger-icon {
+  // .burger-icon {
 
-  }
+  // }
 
 
   // .x-icon {
