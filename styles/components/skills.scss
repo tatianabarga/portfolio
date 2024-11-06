@@ -1,21 +1,10 @@
 @import '../variables.scss';
 
-// .sk-cont {
-  // display: flex;
-  // flex-direction: row;
-  // justify-items: center;
-// }
-
 .skills {
   @include padding(3%, 3%);
 
   &--home {
-    // margin-right: 10%;
-    // background-color: $white;
     @include rounded;
-    // @include padding(4%, 4%);
-    // width: 100%;
-    // height: 50%;
 
     .subheader {
       @include header-lg($dark, $typewriter);
@@ -74,9 +63,6 @@
 
     .skill-txt {
       display: flex;
-      // margin-left: auto;
-      // margin-right: auto;
-      // text-align: center;
       
       &--soft {
         @include text-norm($white-ew, $typewriter);

@@ -2,29 +2,16 @@
 
 .nav-container {
   height: 2%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
   @include padding(1%, 2%);
-  // padding-left: 2rem;
-  // padding-right: 2rem;
-  // margin-top: 4%;
-  // margin-right: auto;
   background-color: $white;
   @include rounded-more();
-  // margin-left: 12.5%;
-  // width: 75%;
   width: 100%;
 
-  // position: sticky !important;
-  // top: 0;
-  // left: 0;
   z-index: 1000;
   flex: 0 0 auto;
 
@@ -34,9 +21,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
-    // margin-top: 2%; //causes gap
-    // flex: 1;
-    // align-items: center; 
 
     .nav-tabs {
       display: flex;
@@ -52,12 +36,6 @@
     .coll-item {
       display: none;
     }
-
-    // @media (max-width: 1282px) {
-    //   .coll-item {
-    //       display: none;
-    //   }
-    // }
   
 
     div {
@@ -72,7 +50,6 @@
     }
   
     .logo {
-      // margin-right: 15%;
       display: flex;
       align-self: flex-start;
       @include bg-boi($pink, $writing);
@@ -91,8 +68,6 @@
   }
 
   .burger {
-
-    // align-items: center;
     justify-content: flex-end;
     margin-bottom: 1%;
 
@@ -104,18 +79,6 @@
       display:flex;
     }
   }
-
-  // .burger-icon {
-
-  // }
-
-
-  // .x-icon {
-  //   width: 10%;
-  //   height: 10%;
-  //   // padding: 2%;
-  //   // margin-right: 5%;
-  // }
 }
 
 .res-btn-nav {

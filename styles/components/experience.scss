@@ -2,8 +2,6 @@
 
 .exp {
   &--home {
-
-    // background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,14 +105,11 @@
   }
 
   &--resume {
-
-    // background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
     @include rounded;
-    // border: 1%, solid, $pop;
 
     .exp-header {
       @include header-lg($dark, $typewriter);

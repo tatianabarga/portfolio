@@ -2,10 +2,6 @@
 
 
 .proj-pg {
-  // background-image: url(../../public/Clouds.png);
-  // background-size: cover;
-  // background-position: center;
-  // background-attachment: fixed;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,7 +12,6 @@
 .bg-img-cont-proj {
   width: 100%;
   padding-bottom: 10%;
-  // height: 80%;
   z-index: 1;
   position: absolute;
   margin: 5%;
@@ -24,8 +19,6 @@
 
 .cloud-img {
   padding: 3%;
-  // height: 80%;
-  // padding-bottom: 10%;
 }
 
 .proj-pg-cont {
@@ -131,10 +124,7 @@
 
     .carousel {
       display: flex !important;
-      // width: 300%;
       width: 100vw;
-      // width: fit-content;
-      // height: 100%;
       transition: transform 1s ease;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -145,12 +135,8 @@
     .project-item {
       background-color: $white-st;
       @include rounded-less();
-      // width: 50%;
-      // @include margins(3%, 1%);
       flex: 1;
-      // width: 50vw;
       flex: 0 0 100vw;
-      // height: 100%;
     }
 
     .sec-header {
@@ -169,13 +155,7 @@
       z-index: 2;
     }
 
-    // .links-ts-sec {
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
-    // }
-
     .proj-links {
-      // grid-column: span 2;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -197,7 +177,6 @@
     }
 
     .proj-ts {
-      // grid-column: span 2;
       @include text-norm-bold($dark, $typewriter);
       font-size: 1.08vw;
       margin-right: 6%;
