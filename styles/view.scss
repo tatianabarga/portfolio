@@ -60,11 +60,11 @@ body:-webkit-scrollbar-thumb {
   border: .55vw solid $white;
 }
 
-@media (min-width: 2088px) {
-  .container::-webkit-scrollbar {
-    width: 1vw;
-  }
-}
+// @media (min-width: 2088px) {
+//   .container::-webkit-scrollbar {
+//     width: 1vw;
+//   }
+// }
 
 /* Thumb hover effect */
 .container::-webkit-scrollbar-thumb:hover {
