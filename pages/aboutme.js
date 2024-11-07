@@ -11,12 +11,12 @@ export default function aboutme() {
         <img src="/portrait.png" className="portrait-img-am" alt="" />
       </div>
       <div className="aboutme-header">
-        <h2 className="aboutme-header-txt">
+        {/* <h2 className="aboutme-header-txt">
           {'<h2>'}
           &nbsp;Hi,
           {'</h2>'}
-        </h2>
-
+        </h2> */}
+        <p className="aboutme-header-txt">Hi,</p>
       </div>
       <div className="aboutme-comp">
         <Aboutme />
