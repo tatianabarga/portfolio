@@ -83,6 +83,31 @@
   margin-left: 2%;
 }
 
+@media (max-width: 788px) {
+  .skills-sec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75vw;
+  }
+
+  .resume-btn {
+    width: 15vw;
+    margin: .1vw;
+  }
+
+  .socials-comp {
+    height: 15vw;
+    width: 25vw;
+  }
+
+  .skills-comp {
+    width: 40vw;
+    margin-left: 40vw;
+    margin-right: 5vw;
+  }
+}
+
 .ed-sec-res {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
