@@ -36,7 +36,7 @@ body:-webkit-scrollbar-thumb {
   height: 100vh;
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1700px) {
   .noauth-content-cont {
     @include rounded();
   }
@@ -65,12 +65,6 @@ body:-webkit-scrollbar-thumb {
   @include rounded();
   border: .55vw solid $white;
 }
-
-// @media (min-width: 2088px) {
-//   .container::-webkit-scrollbar {
-//     width: 1vw;
-//   }
-// }
 
 /* Thumb hover effect */
 .container::-webkit-scrollbar-thumb:hover {
