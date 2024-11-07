@@ -67,6 +67,12 @@
   padding-top: 1%;
 }
 
+@media (max-width: 681px) {
+  .cont-comp-am {
+    @include rounded-less();
+  }
+}
+
 .ab-q {
   grid-column: span 3;
   margin-right: 5%;
