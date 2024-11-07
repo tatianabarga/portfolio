@@ -36,6 +36,12 @@ body:-webkit-scrollbar-thumb {
   height: 100vh;
 }
 
+@media (max-width: 998px) {
+  .noauth-content-cont {
+    @include rounded();
+  }
+}
+
 .container {
   flex: 1 1 auto;
   overflow-y: auto;
