@@ -38,11 +38,6 @@ export default function NavBar() {
                 <a>Home</a>
               </Link>
             </div>
-            <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
-              <Link href="/links">
-                <a>Links</a>
-              </Link>
-            </div>
             {/* <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
               <Link href="/aboutme">
                 <a>About Me</a>
@@ -51,6 +46,11 @@ export default function NavBar() {
             <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
               <Link href="/projects">
                 <a>Projects</a>
+              </Link>
+            </div>
+            <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
+              <Link href="/links">
+                <a>Links</a>
               </Link>
             </div>
             <div className={collapsed ? 'burger burger--shown' : 'burger burger--hidden'} onClick={toggleCollapse}>

@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.link-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-left: 30%;
+  height: 100%;
+}
+
+.link-header {
+  @include header-lg($dark-drk, $typewriter);
+}
+
+.link-subheader {
+  @include secHeader($dark-drk, $typewriter);
+}
+
+.link-item {
+  @include pill($dark);
+  @include margins(5%, 2%);
+  height: 20%;
+  @include padding(6%, 1.5%);
+
+  * {
+    @include secHeader-sm($white, $typewriter);
+    font-size: 1.35vw;
+    letter-spacing: 0.15vw;
+    margin-top: 1%;
+    &:hover {
+      @include hover($pop, $dark-drk);
+    }
+  }
+
+  &:hover {
+    @include hover($pop, $dark-drk);
+  }
+}
