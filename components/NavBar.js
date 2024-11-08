@@ -38,6 +38,11 @@ export default function NavBar() {
                 <a>Home</a>
               </Link>
             </div>
+            <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
+              <Link href="/links">
+                <a>Links</a>
+              </Link>
+            </div>
             {/* <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
               <Link href="/aboutme">
                 <a>About Me</a>
