@@ -48,6 +48,11 @@ export default function NavBar() {
                 <a>Projects</a>
               </Link>
             </div>
+            <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
+              <Link href="/links">
+                <a>Links</a>
+              </Link>
+            </div>
             <div className={collapsed ? 'burger burger--shown' : 'burger burger--hidden'} onClick={toggleCollapse}>
               {/* <span className="b-icon">
                 <Image src="/../public/Burger.png" width="20%" height="20%" />

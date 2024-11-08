@@ -26,6 +26,18 @@ const getGithub = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getPortfolio = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/links/portfolio.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 const getResume = () => new Promise((resolve, reject) => {
   fetch(`${endpoint}/links/resume.json`, {
     method: 'GET',
@@ -67,5 +79,6 @@ export {
   getGithub,
   getResume,
   getInstagram,
+  getPortfolio,
   // getProjectLinks,
 };
