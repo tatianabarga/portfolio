@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
-import { getResume } from '../utils/data/linksData';
+// import { getResume } from '../utils/data/linksData';
 import Certifications from '../components/Certifications';
 import ContactInfo from '../components/ContactInfo';
 import Socials from '../components/Socials';
 
 export default function Resume() {
-  const [resume, setResume] = useState({});
+  // const [resume, setResume] = useState({});
   // const [edArray, setEdArray] = useState([]);
 
-  useEffect(() => {
-    getResume().then(setResume);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   getResume().then(setResume);
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   return (
     <div className="res-cont">
@@ -30,13 +30,9 @@ export default function Resume() {
       <div className="resume-components">
         <div className="skills-sec">
           <div className="resume-btn">
-            <a
-              href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/resume.pdf" download="Tatiana-Barga-Resume.pdf">
               <button type="button" className="res-btn-txt">
-                Printable Resume
+                Download Resume
               </button>
             </a>
           </div>
