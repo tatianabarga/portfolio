@@ -122,21 +122,41 @@
 
   &--home {
 
-    .carousel {
-      display: flex !important;
-      width: 100vw;
-      transition: transform 1s ease;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+    // .carousel {
+      // display: flex !important;
+      // width: 100vw;
+      // transition: transform 1s ease;
+      // flex-direction: row;
+      // flex-wrap: nowrap;
+      // align-items: center;
+      // overflow-x: auto
+      
+    // }
+
+    .arrow-btn {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      overflow-x: auto
+      justify-content: center;
+    }
+
+    button {
+      @include btn-gen($dark, $white, $typewriter);
+      width: 3.5vw;
+      height: 3.5vw;
     }
 
     .project-item {
       background-color: $white-st;
       @include rounded-less();
-      flex: 1;
-      flex: 0 0 100vw;
+      width: 50vw;
+      grid-column: span 5;
+      // flex: 1;
+      // flex: 0 0 100vw;
     }
 
     .sec-header {

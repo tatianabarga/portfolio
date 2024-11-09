@@ -48,9 +48,13 @@ function Home() {
             <ContactInfo fromPage="resume" />
           </div>
         </div>
-        <div className="proj-comp-cont">
-          <Projects />
+        <div className="proj-sec-home">
+          <p className="proj-header-home">Projects</p>
+          <div className="proj-comp-cont">
+            <Projects />
+          </div>
         </div>
+
         <div className="cert-sec">
           <div className="cert-comp">
             <Certifications fromPage="home" />
