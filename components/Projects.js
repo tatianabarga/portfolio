@@ -24,8 +24,27 @@ export default function Projects() {
     setThisProject(projectsArray[0]);
   }, [projectsArray]);
 
+  const back = () => {
+    const arrayCopy = [...projectsArray];
+    const newItem = arrayCopy.pop();
+    arrayCopy.unshift(newItem);
+    setProjectsArray(arrayCopy);
+  };
+
+  const forward = () => {
+    const arrayCopy = [...projectsArray];
+    const currentItem = arrayCopy.shift();
+    arrayCopy.push(currentItem);
+    setProjectsArray(arrayCopy);
+  };
+
   return (
     <div className="project-sec proj proj--home carousel">
+      <div className="arrow-btn left-arr-btn">
+        <button type="button" onClick={back}>
+          &larr;
+        </button>
+      </div>
       <div className="project-item">
         <p className="proj-name">{thisProject?.name}</p>
         <div className="links-ts-sec">
@@ -89,6 +108,11 @@ export default function Projects() {
           ))}
         </div>
         <p className="proj-desc">{thisProject?.description}</p>
+      </div>
+      <div className="arrow-btn right-arr-btn">
+        <button type="button" onClick={forward}>
+          &rarr;
+        </button>
       </div>
     </div>
   );
