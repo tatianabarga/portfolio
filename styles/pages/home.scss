@@ -65,6 +65,17 @@
 
 }
 
+.proj-sec-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.proj-header-home {
+  @include bg-boi($dark-drk, $writing)
+}
+
 .proj-comp-cont {
   @include padding(5%, 0%);
   padding-bottom: 2%;
