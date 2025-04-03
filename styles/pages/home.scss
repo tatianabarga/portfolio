@@ -16,7 +16,7 @@
 }
 
 .page-header-home {
-  @include bg-boi-xl($dark, $typewriter);
+  @include bg-boi-xl($dark, $writing);
   display: flex;
   flex-direction: row;
   align-items: start;

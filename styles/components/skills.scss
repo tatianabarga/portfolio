@@ -7,7 +7,7 @@
     @include rounded;
 
     .subheader {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($dark, $alt);
       margin-left: 10%;
     }
 
@@ -31,11 +31,11 @@
       display: flex;
       
       &--soft {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white, $comf);
       }
 
       &--tech {
-        @include text-norm-bold($white-ew, $typewriter);
+        @include text-norm-bold($white-ew, $comf);
       }
     }
   }

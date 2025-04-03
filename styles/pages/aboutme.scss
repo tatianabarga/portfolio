@@ -25,12 +25,12 @@
 }
 
 .aboutme-title {
-  @include subHeader-bold($blue, $typewriter);
+  @include subHeader-bold($blue, $comf);
   @include margins(8%, 2%)
 }
 
 .aboutme-bio {
-  @include subHeader-bold($blue, $typewriter);
+  @include subHeader-bold($blue, $comf);
   @include rounded();
   margin-right: 30%;
   margin-left: 5%;
