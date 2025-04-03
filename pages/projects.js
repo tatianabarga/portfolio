@@ -10,7 +10,7 @@ export default function projects() {
       </div>
       <div className="proj-pg-cont">
         <div className="sec-header">
-          <p className="sec-header-txt">Projects</p>
+          <p className="sec-header-txt">Projects and Experience</p>
         </div>
         <div className="project-comp">
           <ProjectsProjPage />
