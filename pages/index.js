@@ -52,7 +52,7 @@ function Home() {
           <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
         </div>
         <div className="proj-sec-home">
-          <p className="proj-header-home">Projects</p>
+          <p className="proj-header-home">Projects and Experience</p>
           <div className="proj-comp-cont">
             <Projects />
           </div>
