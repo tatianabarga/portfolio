@@ -18,19 +18,20 @@
 }
 
 .link-item {
-  @include pill($dark);
-  @include margins(5%, 2%);
-  height: 20%;
-  @include padding(6%, 1.5%);
+  // @include pill($dark);
+  // height: 20%;
+  // @include padding(6%, 1.5%);
+  @include btn-sh($dark, $white, $comf, $pink);
+  @include margins(5%, 7%);
 
   * {
     @include secHeader-sm($white, $comf);
     font-size: 1.35vw;
     letter-spacing: 0.15vw;
-    margin-top: 1%;
-    &:hover {
-      @include hover($pop, $dark-drk);
-    }
+    // margin-top: 1%;
+    // &:hover {
+    //   @include hover($pop, $dark-drk);
+    // }
   }
 
   &:hover {
