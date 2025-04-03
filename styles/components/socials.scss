@@ -10,14 +10,14 @@
 
     .social-item {
       @include pill($pop);
-      @include text-norm-bold($white, $typewriter);
+      @include text-norm-bold($white, $alt);
       @include margins(0%, 5%);
       @include padding(6%, 1.5%);
       letter-spacing: 0.2vw;
       height: 20%;
 
       * {
-        @include secHeader-sm($white, $typewriter);
+        @include secHeader-sm($white, $alt);
         font-size: 1.35vw;
         letter-spacing: 0.15vw;
         margin-top: 1%;
@@ -38,7 +38,7 @@
 
     .social-item {
       @include pill($pop);
-      @include text-norm-bold($white, $typewriter);
+      @include text-norm-bold($white, $alt);
       @include margins(2%, 2%);
 
       &:hover {
@@ -68,7 +68,7 @@
       @include padding(6%, 1.5%);
 
       * {
-        @include secHeader-sm($white, $typewriter);
+        @include secHeader-sm($white, $alt);
         font-size: 1.35vw;
         letter-spacing: 0.15vw;
         margin-top: 1%;

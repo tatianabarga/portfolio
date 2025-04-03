@@ -11,7 +11,7 @@
     margin-left: 5%;
 
     .main-header {
-      @include header-lg($pop, $typewriter);
+      @include header-lg($pop, $alt);
       margin-top: 2%;
     }
 
@@ -30,7 +30,7 @@
     }
 
     .title {
-      @include subHeader-bold($dark, $typewriter);
+      @include subHeader-bold($dark, $comf);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -49,7 +49,7 @@
     }
 
     .desc {
-      @include text-norm-bold($pink-dark, $typewriter);
+      @include text-norm-bold($pink-dark, $comf);
       margin-right: 6%;
       display: flex;
       justify-content: end;

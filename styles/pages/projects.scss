@@ -28,7 +28,7 @@
 }
 
 .sec-header-txt {
-  @include header-lg($pop, $typewriter);
+  @include header-lg($pop, $alt);
   font-size: 2.8vw;
   margin-left: 30%;
 }
@@ -51,7 +51,7 @@
     }
     
     .proj-name {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($dark, $comf);
       font-weight: 500;
       margin-left: 1%;
       z-index: 2;
@@ -72,7 +72,7 @@
     
       .proj-link-item {
         @include pill($pop);
-        @include text-norm-bold($dark, $typewriter);
+        @include text-norm-bold($dark, $comf);
         margin-bottom: 2%;
         letter-spacing: 0.15vw;
     
@@ -85,7 +85,7 @@
     
     .proj-ts {
       grid-column: span 2;
-      @include text-norm-bold($dark, $typewriter);
+      @include text-norm-bold($dark, $comf);
       font-size: 1.08vw;
       margin-right: 6%;
       margin-bottom: 2%;
@@ -102,7 +102,7 @@
       width: 75%;
     
       * {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white, $comf);
         @include pill($dark);
         @include rounded-more();
         @include padding(2%, .5%);
@@ -113,7 +113,7 @@
     }
     
     .proj-desc {
-      @include text-norm-bold($dark, $typewriter);
+      @include text-norm-bold($dark, $comf);
       margin-right: 6%;
       margin-bottom: 2%;
       z-index: 2;
@@ -145,7 +145,7 @@
     }
 
     button {
-      @include btn-gen($dark, $white, $typewriter);
+      @include btn-gen($dark, $white, $alt);
       width: 3.5vw;
       height: 3.5vw;
     }
@@ -169,7 +169,7 @@
     }
 
     .proj-name {
-      @include header-lg($dark, $typewriter);
+      @include header-lg($dark, $alt);
       font-weight: 500;
       margin-left: 1%;
       z-index: 2;
@@ -185,7 +185,7 @@
       .proj-link-item {
         @include pill($pop);
         @include padding(2%, 1%);
-        @include text-norm-bold($dark, $typewriter);
+        @include text-norm-bold($dark, $comf);
         margin-bottom: 2%;
         letter-spacing: 0.15vw;
 
@@ -197,7 +197,7 @@
     }
 
     .proj-ts {
-      @include text-norm-bold($dark, $typewriter);
+      @include text-norm-bold($dark, $comf);
       font-size: 1.08vw;
       margin-right: 6%;
       margin-bottom: 2%;
@@ -214,7 +214,7 @@
       width: 75%;
 
       * {
-        @include text-norm($white, $typewriter);
+        @include text-norm($white, $comf);
         @include pill($dark);
         @include rounded-more();
         @include padding(2%, .5%);
@@ -225,7 +225,7 @@
     }
 
     .proj-desc {
-      @include text-norm-bold($dark, $typewriter);
+      @include text-norm-bold($dark, $comf);
       margin-right: 6%;
       margin-bottom: 2%;
       z-index: 2;

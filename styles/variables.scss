@@ -13,9 +13,12 @@ $dark-drk-st: rgba(27, 29, 36, 0.75);
 
 //text
 $norm: Verdana, Geneva, sans-serif;
-$writing: "Damion", "Segoe Script", "Brush Script MT", Geneva, sans-serif;
+$writing: "Yeseva One", "Damion", "Segoe Script", "Brush Script MT", Geneva, sans-serif;
 // $typewriter: 'Lucida Sans Typewriter', 'Lucida Console', monospace;
 $typewriter: Monaco, "Courier New", monospace;
+$alt: 'Montserrat Alternates', sans-serif;
+$comf: 'Comfortaa', cursive;
+$mont: 'Montserrat', sans-serif;
 // $brush: 'French Script MT', cursive;
 
 @mixin bg-boi-xl ($txtcolor, $font) {
