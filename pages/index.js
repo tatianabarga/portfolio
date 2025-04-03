@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import Certifications from '../components/Certifications';
-import ContactInfo from '../components/ContactInfo';
+// import ContactInfo from '../components/ContactInfo';
 import Education from '../components/Education';
 import Projects from '../components/Projects';
 // import Experience from '../components/Experience';
@@ -38,15 +38,15 @@ function Home() {
       </div>
       <div className="resume-components">
         <div className="skills-contact-sec">
-          <div className="skills-comp-home">
+          <div className="skills-comp-alt">
             <Skills fromPage="home" />
           </div>
           <div className="socials-comp-home">
             <Socials className="socials-comp-home" fromPage="home" />
           </div>
-          <div className="cont-comp-home">
+          {/* <div className="cont-comp-home">
             <ContactInfo fromPage="resume" />
-          </div>
+          </div> */}
         </div>
         <div className="quote res-q">
           <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
@@ -59,15 +59,15 @@ function Home() {
         </div>
 
         <div className="cert-sec">
-          <div className="cert-comp">
-            <Certifications fromPage="home" />
-          </div>
           <div className="resume-btn-home">
             <a href="/resume.pdf" download="Tatiana-Barga-Resume.pdf">
               <button type="button" className="res-btn-txt">
                 Download Resume
               </button>
             </a>
+          </div>
+          <div className="cert-comp">
+            <Certifications fromPage="home" />
           </div>
         </div>
         <div className="ed-sec">

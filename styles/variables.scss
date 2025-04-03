@@ -1,6 +1,7 @@
 //colors
 $white: #FFF8E7;
 $white-ew: #FFFBF3;
+$white-dk: #FFECC4;
 $white-st: rgba(255, 248, 231, 0.75);
 $pink: #717DA0;
 // $pink-dark: #c7767a;
@@ -157,6 +158,7 @@ $mont: 'Montserrat', sans-serif;
 @mixin pill-sq ($bg-color) {
   @include pill($bg-color);
   margin: 0.5rem;
+  border-radius: .2rem;
 }
 
 @mixin pill-hollow ($color, $bg-color) {
@@ -176,6 +178,13 @@ $mont: 'Montserrat', sans-serif;
   @include rounded-more();
 }
 
+@mixin box-lg-hollow ($color, $bg-color) {
+  @include pill($bg-color);
+  @include border-th($color);
+  @include padding(2.5%, 1%);
+  @include rounded-barely();
+}
+
 @mixin btn-gen ($color, $txt-color, $font) {
   background-color: $color;
   font-family: $font;
@@ -186,8 +195,19 @@ $mont: 'Montserrat', sans-serif;
   @include padding(2%, 1%);
 }
 
+@mixin btn-sh ($bg-color, $txt-color, $font, $sh-color) {
+  @include pill-sq($bg-color);
+  margin: 4%;
+  box-shadow: 4px 4px 0px $sh-color; 
+  @include text-norm-bold($txt-color, $font);
+}
+
 @mixin border ($color) {
   border: .15vw solid $color;
+}
+
+@mixin border-th ($color) {
+  border: .2vw solid $color;
 }
 
 //animations

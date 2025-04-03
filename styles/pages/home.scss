@@ -82,22 +82,26 @@
 }
 
 .resume-btn-home {
-  margin-left: auto;
-  margin-right: auto;
-  height: 30%; 
-  width: 50;
-  @include btn-gen($pink, $white-ew, $alt);
-  font-size: 1.5vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // height: 30%; 
+  // width: 50;
+  // @include btn-gen($pink, $white-ew, $alt);
+  // font-size: 1.5vw;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
   
-  * {
-    @include margins(2%, 1%);
-  }
+  // * {
+  //   @include margins(2%, 1%);
+  // }
+
+  @include btn-sh($dark, $white, $alt, $blue);
+  
+  @include secHeader($white, $alt);
   
   &:hover {
-    @include hover($dark, $white);
+    @include hover($pink, $white);
   }
 }
 

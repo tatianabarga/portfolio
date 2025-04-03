@@ -102,12 +102,13 @@
       width: 75%;
     
       * {
-        @include text-norm($white, $comf);
-        @include pill($dark);
-        @include rounded-more();
-        @include padding(2%, .5%);
+        @include text-norm($dark, $comf);
+        // @include pill($dark);
+        // @include rounded-more();
+        // @include padding(2%, .5%);
         font-size: 1vw;
-        margin-right: 2%;
+        // margin-right: 2%;
+        @include box-lg-hollow($dark, $white);
       }
       z-index: 2;
     }
@@ -146,6 +147,8 @@
 
     button {
       @include btn-gen($dark, $white, $alt);
+      border-radius: .2rem;
+      box-shadow: 4px 4px 0px $white-dk; 
       width: 3.5vw;
       height: 3.5vw;
     }
@@ -183,11 +186,14 @@
       flex-wrap: wrap;
 
       .proj-link-item {
-        @include pill($pop);
-        @include padding(2%, 1%);
-        @include text-norm-bold($dark, $comf);
-        margin-bottom: 2%;
-        letter-spacing: 0.15vw;
+        // @include pill($pop);
+        // @include padding(2%, 1%);
+        // @include text-norm-bold($dark, $comf);
+        // margin-bottom: 2%;
+        // letter-spacing: 0.15vw;
+
+        @include btn-sh($pop, $dark, $comf, $dark);
+        margin: 1%;
 
         &:hover {
           @include hover($dark, $white);
@@ -214,12 +220,9 @@
       width: 75%;
 
       * {
-        @include text-norm($white, $comf);
-        @include pill($dark);
-        @include rounded-more();
-        @include padding(2%, .5%);
+        @include text-norm($dark, $comf);
         font-size: 1vw;
-        margin-right: 2%;
+        @include box-lg-hollow($dark, $white);
       }
       z-index: 2;
     }

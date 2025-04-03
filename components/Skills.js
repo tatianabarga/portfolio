@@ -25,7 +25,7 @@ export default function Skills({ fromPage }) {
   }, [softSkills]);
 
   return (
-    <div className={fromPage === 'resume' ? 'skills skills--resume' : 'skills skills--home'}>
+    <div className={fromPage === 'resume' ? 'skills skills--resume' : 'skills skills--alt'}>
       <h2 className="subheader">Skills</h2>
       <div className="sk-cont">
         <div className="sk-subcont">

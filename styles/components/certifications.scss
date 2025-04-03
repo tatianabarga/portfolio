@@ -29,8 +29,7 @@
     }
 
     .cert-item {
-      @include pill-sq($dark);
-      margin: 4%;    
+      @include btn-sh($dark, $white, $alt, $blue);
       
       &:hover {
         @include hover($pink, $white);
