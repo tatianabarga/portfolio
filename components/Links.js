@@ -4,6 +4,7 @@ import {
   getInstagram,
   getLinkedin,
   getPortfolio,
+  getBehance,
 } from '../utils/data/linksData';
 import getAllProjects from '../utils/data/projectsData';
 
@@ -11,6 +12,7 @@ export default function Lins() {
   const [gitHub, setGitHub] = useState('');
   const [linkedIn, setLinkedIn] = useState('');
   const [instagram, setInstagram] = useState('');
+  const [behance, setBehance] = useState('');
   const [portfolio, setPortfolio] = useState('');
   const [projectsArray, setProjectsArray] = useState([]);
 
@@ -26,6 +28,7 @@ export default function Lins() {
     getLinkedin().then(setLinkedIn);
     getGithub().then(setGitHub);
     getInstagram().then(setInstagram);
+    getBehance().then(setBehance);
     getPortfolio().then(setPortfolio);
   }, []);
 
@@ -57,6 +60,15 @@ export default function Lins() {
         <p className="link-header">My Work</p>
         <div className="link-item">
           <a
+            href={behance}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="cert-txt">Behance</p>
+          </a>
+        </div>
+        <div className="link-item">
+          <a
             href={gitHub}
             target="_blank"
             rel="noopener noreferrer"
@@ -74,7 +86,10 @@ export default function Lins() {
           <div className="project-links">
             {projectsArray.map((thisProject) => (
               <div className="project-item-links">
-                <p className="proj-name-links link-subheader">{thisProject.name}</p>
+                {thisProject.name === 'Full Stack Software Developer Apprentice' ? null
+                  : (
+                    <p className="proj-name-links link-subheader">{thisProject.name}</p>
+                  ) }
                 <div className="links-ts-sec">
                   <div className="proj-links">
                     {thisProject.deployedProject
