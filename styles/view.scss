@@ -26,7 +26,7 @@ body:-webkit-scrollbar-thumb {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  @include rounded-more;
+  @include rounded;
   background-color: $white;
   position: relative;
 
@@ -38,7 +38,7 @@ body:-webkit-scrollbar-thumb {
 
 @media (max-width: 1700px) {
   .noauth-content-cont {
-    @include rounded();
+    @include rounded-barely();
   }
 }
 

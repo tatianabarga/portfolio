@@ -121,6 +121,10 @@ $mont: 'Montserrat', sans-serif;
   border-radius: .5rem;
 }
 
+@mixin rounded-barely () {
+  border-radius: .2rem;
+}
+
 @mixin margins ($sides, $tb) {
   margin-top: $tb;
   margin-bottom: $tb;
