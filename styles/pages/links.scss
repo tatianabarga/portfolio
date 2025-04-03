@@ -10,11 +10,11 @@
 }
 
 .link-header {
-  @include header-lg($dark-drk, $typewriter);
+  @include header-lg($dark-drk, $writing);
 }
 
 .link-subheader {
-  @include secHeader($dark-drk, $typewriter);
+  @include secHeader($dark-drk, $alt);
 }
 
 .link-item {
@@ -24,7 +24,7 @@
   @include padding(6%, 1.5%);
 
   * {
-    @include secHeader-sm($white, $typewriter);
+    @include secHeader-sm($white, $comf);
     font-size: 1.35vw;
     letter-spacing: 0.15vw;
     margin-top: 1%;
