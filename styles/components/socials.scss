@@ -9,22 +9,24 @@
     height: 100%;
 
     .social-item {
-      @include pill($pop);
-      @include text-norm-bold($white, $alt);
+      @include pill-sq($pop);
+      border-radius: .2rem;
+      @include text-norm-bold($blue, $alt);
       @include margins(0%, 5%);
       @include padding(6%, 1.5%);
       letter-spacing: 0.2vw;
       height: 20%;
+      box-shadow: 4px 4px 0px $blue; 
 
       * {
-        @include secHeader-sm($white, $alt);
+        @include secHeader-sm($blue, $alt);
         font-size: 1.35vw;
         letter-spacing: 0.15vw;
         margin-top: 1%;
       }
 
       &:hover {
-        @include hover($dark, $white);
+        @include hover($white-dk, $white);
       }
     }
   }

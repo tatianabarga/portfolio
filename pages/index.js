@@ -59,15 +59,15 @@ function Home() {
         </div>
 
         <div className="cert-sec">
-          <div className="cert-comp">
-            <Certifications fromPage="home" />
-          </div>
           <div className="resume-btn-home">
             <a href="/resume.pdf" download="Tatiana-Barga-Resume.pdf">
               <button type="button" className="res-btn-txt">
                 Download Resume
               </button>
             </a>
+          </div>
+          <div className="cert-comp">
+            <Certifications fromPage="home" />
           </div>
         </div>
         <div className="ed-sec">
