@@ -3,7 +3,7 @@ import Certifications from '../components/Certifications';
 import ContactInfo from '../components/ContactInfo';
 import Education from '../components/Education';
 import Projects from '../components/Projects';
-import Experience from '../components/Experience';
+// import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 // import { getResume } from '../utils/data/linksData';
 import Aboutme from '../components/Aboutme';
@@ -48,6 +48,9 @@ function Home() {
             <ContactInfo fromPage="resume" />
           </div>
         </div>
+        <div className="quote res-q">
+          <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>
+        </div>
         <div className="proj-sec-home">
           <p className="proj-header-home">Projects</p>
           <div className="proj-comp-cont">
@@ -72,9 +75,9 @@ function Home() {
             <Education fromPage="resume" />
           </div>
         </div>
-        <div className="exp-sec">
+        {/* <div className="exp-sec">
           <Experience fromPage="resume" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

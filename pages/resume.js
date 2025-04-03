@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
 import Education from '../components/Education';
-import Experience from '../components/Experience';
+// import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 // import { getResume } from '../utils/data/linksData';
 import Certifications from '../components/Certifications';
@@ -51,9 +51,9 @@ export default function Resume() {
             <Education fromPage="resume" />
           </div>
         </div>
-        <div className="exp-sec-res">
+        {/* <div className="exp-sec-res">
           <Experience fromPage="resume" />
-        </div>
+        </div> */}
         <div className="cert-sec">
           <div className="cert-comp">
             <Certifications fromPage="resume" />
