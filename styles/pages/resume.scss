@@ -119,7 +119,7 @@
 .quote {
   padding: 2%;
   margin: 2%;
-  @include text-norm-bold($white, $typewriter);
+  @include text-norm-bold($white, $comf);
   background-color: $dark-drk-st;
   @include rounded-less();
 }
