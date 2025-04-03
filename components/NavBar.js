@@ -59,11 +59,11 @@ export default function NavBar() {
               </span> */}
               <img src="/Burger.png" className="burger-icon" alt="" width="5%" height="5%" />
             </div>
-            <Link className="btn-div" href="/resume" passHref>
+            {/* <Link className="btn-div" href="/resume" passHref>
               <button type="button" className="res-btn-nav">
                 <a>Resume</a>
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="email-nav">
