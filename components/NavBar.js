@@ -31,7 +31,7 @@ export default function NavBar() {
           </div>
           <div className="nav-tabs">
             <div className={collapsed ? 'x x--hidden' : 'x x--shown'} onClick={toggleCollapse}>
-              <p>X</p>
+              <img src="x.png" className="x-icon" alt="" width="5%" height="5%" />
             </div>
             <div className={collapsed ? 'coll-item' : 'non-coll-item'}>
               <Link href="/">

@@ -67,9 +67,26 @@
     }
   }
 
+  .x-icon {
+    justify-content: flex-end;
+    margin-bottom: 1%;
+    width:50%;
+    height: 50%;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--shown{
+      display:flex;
+    }
+  }
+
   .burger {
     justify-content: flex-end;
     margin-bottom: 1%;
+    width:100%;
+    height: 65%;
 
     &--hidden {
       display: none;
