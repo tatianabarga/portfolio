@@ -40,6 +40,43 @@
     }
   }
 
+  &--alt {
+    @include rounded;
+
+    .subheader {
+      @include header-lg($dark, $alt);
+      margin-left: 10%;
+    }
+
+    .sk-subcont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      @include margins(0%, 5%);
+    }
+
+    .skill--soft {
+      @include box-lg-hollow($dark, $white);
+    }
+    
+    .skill--tech{
+      @include box-lg-hollow($blue, $white);
+    }
+
+    .skill-txt {
+      display: flex;
+      
+      &--soft {
+        @include text-norm-bold($dark, $comf);
+      }
+
+      &--tech {
+        @include text-norm-bold($blue, $comf);
+      }
+    }
+  }
+
   &--resume {
     margin-right: 10%;
     background-color: $pink;

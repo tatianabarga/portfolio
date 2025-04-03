@@ -38,15 +38,15 @@ function Home() {
       </div>
       <div className="resume-components">
         <div className="skills-contact-sec">
-          <div className="skills-comp-home">
+          <div className="skills-comp-alt">
             <Skills fromPage="home" />
           </div>
           <div className="socials-comp-home">
             <Socials className="socials-comp-home" fromPage="home" />
           </div>
-          <div className="cont-comp-home">
+          {/* <div className="cont-comp-home">
             <ContactInfo fromPage="resume" />
-          </div>
+          </div> */}
         </div>
         <div className="quote res-q">
           <p> There really isn&apos;t a difficult thing unless you decide it&apos;s a difficult thing. Otherwise it&apos;s just the next thing you&apos;re figuring out.</p>

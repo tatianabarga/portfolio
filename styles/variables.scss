@@ -176,6 +176,13 @@ $mont: 'Montserrat', sans-serif;
   @include rounded-more();
 }
 
+@mixin box-lg-hollow ($color, $bg-color) {
+  @include pill($bg-color);
+  @include border-th($color);
+  @include padding(2.5%, 1%);
+  @include rounded-barely();
+}
+
 @mixin btn-gen ($color, $txt-color, $font) {
   background-color: $color;
   font-family: $font;
@@ -188,6 +195,10 @@ $mont: 'Montserrat', sans-serif;
 
 @mixin border ($color) {
   border: .15vw solid $color;
+}
+
+@mixin border-th ($color) {
+  border: .2vw solid $color;
 }
 
 //animations
