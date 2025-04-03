@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { getGithub, getInstagram, getLinkedin } from '../utils/data/linksData';
+import {
+  getGithub,
+  getInstagram,
+  getLinkedin,
+  getBehance,
+} from '../utils/data/linksData';
 
 export default function Socials({ fromPage }) {
   const [gitHub, setGitHub] = useState('');
   const [linkedIn, setLinkedIn] = useState('');
   const [instagram, setInstagram] = useState('');
+  const [behance, setBehance] = useState('');
   const [classLabel, setClassLabel] = useState('');
 
   useEffect(() => {
@@ -18,11 +24,21 @@ export default function Socials({ fromPage }) {
     getLinkedin().then(setLinkedIn);
     getGithub().then(setGitHub);
     getInstagram().then(setInstagram);
+    getBehance().then(setBehance);
   }, []);
 
   return (
     // eslint-disable-next-line no-nested-ternary
     <div className={classLabel}>
+      <div className="social-item">
+        <a
+          href={behance}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="cert-txt">Behance</p>
+        </a>
+      </div>
       <div className="social-item">
         <a
           href={gitHub}
