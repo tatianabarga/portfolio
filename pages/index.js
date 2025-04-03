@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import Certifications from '../components/Certifications';
-import ContactInfo from '../components/ContactInfo';
+// import ContactInfo from '../components/ContactInfo';
 import Education from '../components/Education';
 import Projects from '../components/Projects';
 // import Experience from '../components/Experience';

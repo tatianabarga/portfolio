@@ -102,12 +102,13 @@
       width: 75%;
     
       * {
-        @include text-norm($white, $comf);
-        @include pill($dark);
-        @include rounded-more();
-        @include padding(2%, .5%);
+        @include text-norm($dark, $comf);
+        // @include pill($dark);
+        // @include rounded-more();
+        // @include padding(2%, .5%);
         font-size: 1vw;
-        margin-right: 2%;
+        // margin-right: 2%;
+        @include box-lg-hollow($dark, $white);
       }
       z-index: 2;
     }
@@ -214,12 +215,9 @@
       width: 75%;
 
       * {
-        @include text-norm($white, $comf);
-        @include pill($dark);
-        @include rounded-more();
-        @include padding(2%, .5%);
+        @include text-norm($dark, $comf);
         font-size: 1vw;
-        margin-right: 2%;
+        @include box-lg-hollow($dark, $white);
       }
       z-index: 2;
     }
