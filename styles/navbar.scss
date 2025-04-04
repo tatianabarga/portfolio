@@ -7,7 +7,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  @include padding(1%, 2%);
+  @include padding(1%, 1%);
   background-color: $white;
   @include rounded-more();
   width: 100%;
@@ -18,8 +18,8 @@
   .first-teir {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    // justify-content: flex-end;
+    // align-items: flex-end;
     width: 100%;
 
     .nav-tabs {
@@ -41,7 +41,8 @@
     div {
       margin-left: 1rem;
       margin-right: 1rem;
-      @include secHeader-sm($pink, $writing);
+      @include text-sm($pink, $writing);
+      font-size: 1.15rem;
       font-weight: bold;
       
       &:hover {
@@ -52,7 +53,7 @@
     .logo {
       display: flex;
       align-self: flex-start;
-      @include bg-boi($pink, $writing);
+      @include header-lg($pink, $writing);
       align-items: center;
     }
   }
@@ -84,8 +85,7 @@
 
   .burger {
     justify-content: flex-end;
-    margin-bottom: 1%;
-    width:100%;
+    width:40%;
     height: 65%;
 
     &--hidden {
@@ -112,6 +112,7 @@
 .email-nav {
   align-self: flex-end;
   margin-right: 3%;
-  @include subHeader-bold($pop, $comf);
+  @include text-norm($pop, $comf);
+  // font-size: .5rem;
   font-size: 1.4vw;
 }
