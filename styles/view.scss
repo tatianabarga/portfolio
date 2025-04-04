@@ -45,7 +45,7 @@ body:-webkit-scrollbar-thumb {
 .container {
   flex: 1 1 auto;
   overflow-y: auto;
-  margin-top: 15%;
+  margin-top: 8%;
   margin-bottom: 2%;
 }
 
@@ -56,13 +56,13 @@ body:-webkit-scrollbar-thumb {
 /* Track (background of the scrollbar) */
 .container::-webkit-scrollbar-track {
   background: $white;
-  @include rounded();
+  border-radius: .9rem;
 }
 
 /* Thumb (the draggable part of the scrollbar) */
 .container::-webkit-scrollbar-thumb {
   background-color: $pink;
-  @include rounded();
+  border-radius: .9rem;
   border: .55vw solid $white;
 }
 
