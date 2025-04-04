@@ -18,8 +18,8 @@
   .first-teir {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    // justify-content: flex-end;
+    // align-items: flex-end;
     width: 100%;
 
     .nav-tabs {
@@ -85,8 +85,7 @@
 
   .burger {
     justify-content: flex-end;
-    margin-bottom: 1%;
-    width:100%;
+    width:40%;
     height: 65%;
 
     &--hidden {
