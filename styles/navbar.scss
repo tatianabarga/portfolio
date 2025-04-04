@@ -7,7 +7,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  @include padding(1%, 2%);
+  @include padding(1%, 1%);
   background-color: $white;
   @include rounded-more();
   width: 100%;
