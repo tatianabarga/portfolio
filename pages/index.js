@@ -22,7 +22,7 @@ function Home() {
     <div className="home-pg">
       <div className="home-hero-img">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/HERO.png" className="portrait-img" alt="" />
+        <img src="/HERO.png" className="hero-img" alt="" />
       </div>
       <div className="home-bg-img-cont">
         {/* eslint-disable-next-line @next/next/no-img-element */}

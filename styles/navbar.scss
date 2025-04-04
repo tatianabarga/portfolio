@@ -41,7 +41,8 @@
     div {
       margin-left: 1rem;
       margin-right: 1rem;
-      @include secHeader-sm($pink, $writing);
+      @include text-sm($pink, $writing);
+      font-size: 1.15rem;
       font-weight: bold;
       
       &:hover {
@@ -52,7 +53,7 @@
     .logo {
       display: flex;
       align-self: flex-start;
-      @include bg-boi($pink, $writing);
+      @include header-lg($pink, $writing);
       align-items: center;
     }
   }
@@ -112,6 +113,7 @@
 .email-nav {
   align-self: flex-end;
   margin-right: 3%;
-  @include subHeader-bold($pop, $comf);
+  @include text-norm($pop, $comf);
+  // font-size: .5rem;
   font-size: 1.4vw;
 }
